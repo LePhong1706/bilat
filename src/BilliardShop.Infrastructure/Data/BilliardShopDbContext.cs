@@ -244,43 +244,43 @@ public class BilliardShopDbContext : DbContext
     }
 
     private static void ConfigureCheckConstraints(ModelBuilder modelBuilder)
-    {
-        // Gender check constraint
-        modelBuilder.Entity<NguoiDung>()
-            .HasCheckConstraint("CK_NguoiDung_GioiTinh", "[GioiTinh] IN ('M', 'F', 'K')");
+{
+    // Gender check constraint
+    modelBuilder.Entity<NguoiDung>()
+        .ToTable(t => t.HasCheckConstraint("CK_NguoiDung_GioiTinh", "[GioiTinh] IN ('M', 'F', 'K')"));
 
-        // Address type check constraint
-        modelBuilder.Entity<DiaChiNguoiDung>()
-            .HasCheckConstraint("CK_DiaChiNguoiDung_LoaiDiaChi", "[LoaiDiaChi] IN ('GiaoHang', 'ThanhToan', 'CaHai')");
+    // Address type check constraint
+    modelBuilder.Entity<DiaChiNguoiDung>()
+        .ToTable(t => t.HasCheckConstraint("CK_DiaChiNguoiDung_LoaiDiaChi", "[LoaiDiaChi] IN ('GiaoHang', 'ThanhToan', 'CaHai')"));
 
-        // Inventory movement type check constraint
-        modelBuilder.Entity<BienDongKhoHang>()
-            .HasCheckConstraint("CK_BienDongKhoHang_LoaiBienDong", "[LoaiBienDong] IN ('NHAP', 'XUAT', 'DIEU_CHINH')");
+    // Inventory movement type check constraint
+    modelBuilder.Entity<BienDongKhoHang>()
+        .ToTable(t => t.HasCheckConstraint("CK_BienDongKhoHang_LoaiBienDong", "[LoaiBienDong] IN ('NHAP', 'XUAT', 'DIEU_CHINH')"));
 
-        // Payment status check constraint
-        modelBuilder.Entity<DonHang>()
-            .HasCheckConstraint("CK_DonHang_TrangThaiThanhToan", "[TrangThaiThanhToan] IN ('ChoThanhToan', 'DaThanhToan', 'ThatBai', 'HoanTien')");
+    // Payment status check constraint
+    modelBuilder.Entity<DonHang>()
+        .ToTable(t => t.HasCheckConstraint("CK_DonHang_TrangThaiThanhToan", "[TrangThaiThanhToan] IN ('ChoThanhToan', 'DaThanhToan', 'ThatBai', 'HoanTien')"));
 
-        // Discount type check constraint
-        modelBuilder.Entity<MaGiamGia>()
-            .HasCheckConstraint("CK_MaGiamGia_LoaiGiamGia", "[LoaiGiamGia] IN ('PhanTram', 'SoTienCoDinh')");
+    // Discount type check constraint
+    modelBuilder.Entity<MaGiamGia>()
+        .ToTable(t => t.HasCheckConstraint("CK_MaGiamGia_LoaiGiamGia", "[LoaiGiamGia] IN ('PhanTram', 'SoTienCoDinh')"));
 
-        // Rating range check constraint
-        modelBuilder.Entity<DanhGiaSanPham>()
-            .HasCheckConstraint("CK_DanhGiaSanPham_DiemDanhGia", "[DiemDanhGia] BETWEEN 1 AND 5");
+    // Rating range check constraint
+    modelBuilder.Entity<DanhGiaSanPham>()
+        .ToTable(t => t.HasCheckConstraint("CK_DanhGiaSanPham_DiemDanhGia", "[DiemDanhGia] BETWEEN 1 AND 5"));
 
-        // Article status check constraint
-        modelBuilder.Entity<BaiViet>()
-            .HasCheckConstraint("CK_BaiViet_TrangThai", "[TrangThai] IN ('NhapBan', 'ChoXuatBan', 'XuatBan')");
+    // Article status check constraint
+    modelBuilder.Entity<BaiViet>()
+        .ToTable(t => t.HasCheckConstraint("CK_BaiViet_TrangThai", "[TrangThai] IN ('NhapBan', 'ChoXuatBan', 'XuatBan')"));
 
-        // Comment status check constraint
-        modelBuilder.Entity<BinhLuanBaiViet>()
-            .HasCheckConstraint("CK_BinhLuanBaiViet_TrangThai", "[TrangThai] IN ('ChoDuyet', 'DaDuyet', 'BiTuChoi')");
+    // Comment status check constraint
+    modelBuilder.Entity<BinhLuanBaiViet>()
+        .ToTable(t => t.HasCheckConstraint("CK_BinhLuanBaiViet_TrangThai", "[TrangThai] IN ('ChoDuyet', 'DaDuyet', 'BiTuChoi')"));
 
-        // System log action check constraint
-        modelBuilder.Entity<NhatKyHeThong>()
-            .HasCheckConstraint("CK_NhatKyHeThong_HanhDong", "[HanhDong] IN ('THEM', 'SUA', 'XOA')");
-    }
+    // System log action check constraint
+    modelBuilder.Entity<NhatKyHeThong>()
+        .ToTable(t => t.HasCheckConstraint("CK_NhatKyHeThong_HanhDong", "[HanhDong] IN ('THEM', 'SUA', 'XOA')"));
+}
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

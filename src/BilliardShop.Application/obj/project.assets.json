@@ -2826,32 +2826,40 @@
     ]
   },
   "packageFolders": {
-    "/home/luckyboiz/.nuget/packages/": {}
+    "C:\\Users\\letra\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Application/BilliardShop.Application.csproj",
+      "projectUniqueName": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Application\\BilliardShop.Application.csproj",
       "projectName": "BilliardShop.Application",
-      "projectPath": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Application/BilliardShop.Application.csproj",
-      "packagesPath": "/home/luckyboiz/.nuget/packages/",
-      "outputPath": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Application/obj/",
+      "projectPath": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Application\\BilliardShop.Application.csproj",
+      "packagesPath": "C:\\Users\\letra\\.nuget\\packages\\",
+      "outputPath": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/luckyboiz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\letra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Domain/BilliardShop.Domain.csproj": {
-              "projectPath": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Domain/BilliardShop.Domain.csproj"
+            "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Domain\\BilliardShop.Domain.csproj": {
+              "projectPath": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Domain\\BilliardShop.Domain.csproj"
             }
           }
         }
@@ -2892,18 +2900,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.9, 9.0.9]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

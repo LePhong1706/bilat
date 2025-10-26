@@ -1,1903 +1,1987 @@
 {
   "Files": [
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/obj/Debug/net9.0/scopedcss/projectbundle/BilliardShop.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets/BilliardShop.Web.x7pyo6foso.bundle.scp.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\BilliardShop.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BilliardShop.Web.4zfjjn3yz6.bundle.scp.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/Compare (1).svg",
-      "PackagePath": "staticwebassets/Compare (1).svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\Compare (1).svg",
+      "PackagePath": "staticwebassets\\Compare (1).svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/Whislist (1).svg",
-      "PackagePath": "staticwebassets/Whislist (1).svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\Whislist (1).svg",
+      "PackagePath": "staticwebassets\\Whislist (1).svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/ajaxinate.min.js",
-      "PackagePath": "staticwebassets/ajaxinate.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\ajaxinate.min.js",
+      "PackagePath": "staticwebassets\\ajaxinate.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/animate.min.css",
-      "PackagePath": "staticwebassets/animate.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\animate.min.css",
+      "PackagePath": "staticwebassets\\animate.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/axios.min.js",
-      "PackagePath": "staticwebassets/axios.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\axios.min.js",
+      "PackagePath": "staticwebassets\\axios.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/base.css",
-      "PackagePath": "staticwebassets/base.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\base.css",
+      "PackagePath": "staticwebassets\\base.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/cart-drawer.js",
-      "PackagePath": "staticwebassets/cart-drawer.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\cart-drawer.js",
+      "PackagePath": "staticwebassets\\cart-drawer.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/cart-notification.js",
-      "PackagePath": "staticwebassets/cart-notification.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\cart-notification.js",
+      "PackagePath": "staticwebassets\\cart-notification.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/cart.js",
-      "PackagePath": "staticwebassets/cart.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\cart.js",
+      "PackagePath": "staticwebassets\\cart.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/collage.css",
-      "PackagePath": "staticwebassets/collage.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\collage.css",
+      "PackagePath": "staticwebassets\\collage.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/collapsible-content.css",
-      "PackagePath": "staticwebassets/collapsible-content.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\collapsible-content.css",
+      "PackagePath": "staticwebassets\\collapsible-content.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/collection-placeholder-1.svg",
-      "PackagePath": "staticwebassets/collection-placeholder-1.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\collection-placeholder-1.svg",
+      "PackagePath": "staticwebassets\\collection-placeholder-1.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/collection-placeholder.svg",
-      "PackagePath": "staticwebassets/collection-placeholder.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\collection-placeholder.svg",
+      "PackagePath": "staticwebassets\\collection-placeholder.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/collection-slider.css",
-      "PackagePath": "staticwebassets/collection-slider.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\collection-slider.css",
+      "PackagePath": "staticwebassets\\collection-slider.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/compare-fill.svg",
-      "PackagePath": "staticwebassets/compare-fill.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\compare-fill.svg",
+      "PackagePath": "staticwebassets\\compare-fill.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/compare-icons.svg",
-      "PackagePath": "staticwebassets/compare-icons.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\compare-icons.svg",
+      "PackagePath": "staticwebassets\\compare-icons.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/compare.svg",
-      "PackagePath": "staticwebassets/compare.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\compare.svg",
+      "PackagePath": "staticwebassets\\compare.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/compare2.svg",
-      "PackagePath": "staticwebassets/compare2.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\compare2.svg",
+      "PackagePath": "staticwebassets\\compare2.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/compare3.svg",
-      "PackagePath": "staticwebassets/compare3.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\compare3.svg",
+      "PackagePath": "staticwebassets\\compare3.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/custom-swiper.css",
-      "PackagePath": "staticwebassets/custom-swiper.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\custom-swiper.css",
+      "PackagePath": "staticwebassets\\custom-swiper.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/custom.css",
-      "PackagePath": "staticwebassets/custom.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\custom.css",
+      "PackagePath": "staticwebassets\\custom.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/customer.css",
-      "PackagePath": "staticwebassets/customer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\customer.css",
+      "PackagePath": "staticwebassets\\customer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/customer.js",
-      "PackagePath": "staticwebassets/customer.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\customer.js",
+      "PackagePath": "staticwebassets\\customer.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dT_bundle.js",
-      "PackagePath": "staticwebassets/dT_bundle.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dT_bundle.js",
+      "PackagePath": "staticwebassets\\dT_bundle.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dT_bundle_base.js",
-      "PackagePath": "staticwebassets/dT_bundle_base.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dT_bundle_base.js",
+      "PackagePath": "staticwebassets\\dT_bundle_base.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/details-disclosure.js",
-      "PackagePath": "staticwebassets/details-disclosure.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\details-disclosure.js",
+      "PackagePath": "staticwebassets\\details-disclosure.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/details-modal.js",
-      "PackagePath": "staticwebassets/details-modal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\details-modal.js",
+      "PackagePath": "staticwebassets\\details-modal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/disclosure.css",
-      "PackagePath": "staticwebassets/disclosure.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\disclosure.css",
+      "PackagePath": "staticwebassets\\disclosure.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-accordion.css",
-      "PackagePath": "staticwebassets/dt-accordion.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-accordion.css",
+      "PackagePath": "staticwebassets\\dt-accordion.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-article-card.css",
-      "PackagePath": "staticwebassets/dt-article-card.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-article-card.css",
+      "PackagePath": "staticwebassets\\dt-article-card.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-badge.css",
-      "PackagePath": "staticwebassets/dt-badge.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-badge.css",
+      "PackagePath": "staticwebassets\\dt-badge.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-cart-drawer.css",
-      "PackagePath": "staticwebassets/dt-cart-drawer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-cart-drawer.css",
+      "PackagePath": "staticwebassets\\dt-cart-drawer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-cart-items.css",
-      "PackagePath": "staticwebassets/dt-cart-items.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-cart-items.css",
+      "PackagePath": "staticwebassets\\dt-cart-items.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-cart-notification.css",
-      "PackagePath": "staticwebassets/dt-cart-notification.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-cart-notification.css",
+      "PackagePath": "staticwebassets\\dt-cart-notification.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-cart.css",
-      "PackagePath": "staticwebassets/dt-cart.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-cart.css",
+      "PackagePath": "staticwebassets\\dt-cart.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-complementary-products.css",
-      "PackagePath": "staticwebassets/dt-complementary-products.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-complementary-products.css",
+      "PackagePath": "staticwebassets\\dt-complementary-products.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-deferred-media.css",
-      "PackagePath": "staticwebassets/dt-deferred-media.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-deferred-media.css",
+      "PackagePath": "staticwebassets\\dt-deferred-media.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-discounts.css",
-      "PackagePath": "staticwebassets/dt-discounts.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-discounts.css",
+      "PackagePath": "staticwebassets\\dt-discounts.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-facets.css",
-      "PackagePath": "staticwebassets/dt-facets.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-facets.css",
+      "PackagePath": "staticwebassets\\dt-facets.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-list-menu.css",
-      "PackagePath": "staticwebassets/dt-list-menu.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-list-menu.css",
+      "PackagePath": "staticwebassets\\dt-list-menu.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-list-payment.css",
-      "PackagePath": "staticwebassets/dt-list-payment.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-list-payment.css",
+      "PackagePath": "staticwebassets\\dt-list-payment.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-list-social.css",
-      "PackagePath": "staticwebassets/dt-list-social.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-list-social.css",
+      "PackagePath": "staticwebassets\\dt-list-social.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-loading-overlay.css",
-      "PackagePath": "staticwebassets/dt-loading-overlay.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-loading-overlay.css",
+      "PackagePath": "staticwebassets\\dt-loading-overlay.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-mega-menu.css",
-      "PackagePath": "staticwebassets/dt-mega-menu.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-mega-menu.css",
+      "PackagePath": "staticwebassets\\dt-mega-menu.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-mega-menu.js",
-      "PackagePath": "staticwebassets/dt-mega-menu.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-mega-menu.js",
+      "PackagePath": "staticwebassets\\dt-mega-menu.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-menu-drawer.css",
-      "PackagePath": "staticwebassets/dt-menu-drawer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-menu-drawer.css",
+      "PackagePath": "staticwebassets\\dt-menu-drawer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-modal-video.css",
-      "PackagePath": "staticwebassets/dt-modal-video.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-modal-video.css",
+      "PackagePath": "staticwebassets\\dt-modal-video.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-model-viewer-ui.css",
-      "PackagePath": "staticwebassets/dt-model-viewer-ui.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-model-viewer-ui.css",
+      "PackagePath": "staticwebassets\\dt-model-viewer-ui.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-pagination.css",
-      "PackagePath": "staticwebassets/dt-pagination.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-pagination.css",
+      "PackagePath": "staticwebassets\\dt-pagination.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-pickup-availability.css",
-      "PackagePath": "staticwebassets/dt-pickup-availability.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-pickup-availability.css",
+      "PackagePath": "staticwebassets\\dt-pickup-availability.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-predictive-search.css",
-      "PackagePath": "staticwebassets/dt-predictive-search.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-predictive-search.css",
+      "PackagePath": "staticwebassets\\dt-predictive-search.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-price.css",
-      "PackagePath": "staticwebassets/dt-price.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-price.css",
+      "PackagePath": "staticwebassets\\dt-price.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-product-model.css",
-      "PackagePath": "staticwebassets/dt-product-model.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-product-model.css",
+      "PackagePath": "staticwebassets\\dt-product-model.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-rating.css",
-      "PackagePath": "staticwebassets/dt-rating.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-rating.css",
+      "PackagePath": "staticwebassets\\dt-rating.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-rte.css",
-      "PackagePath": "staticwebassets/dt-rte.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-rte.css",
+      "PackagePath": "staticwebassets\\dt-rte.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-search.css",
-      "PackagePath": "staticwebassets/dt-search.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-search.css",
+      "PackagePath": "staticwebassets\\dt-search.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-show-more.css",
-      "PackagePath": "staticwebassets/dt-show-more.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-show-more.css",
+      "PackagePath": "staticwebassets\\dt-show-more.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-swiper.css",
-      "PackagePath": "staticwebassets/dt-swiper.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-swiper.css",
+      "PackagePath": "staticwebassets\\dt-swiper.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-theme.js",
-      "PackagePath": "staticwebassets/dt-theme.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-theme.js",
+      "PackagePath": "staticwebassets\\dt-theme.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt-totals.css",
-      "PackagePath": "staticwebassets/dt-totals.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt-totals.css",
+      "PackagePath": "staticwebassets\\dt-totals.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt_bundle.css",
-      "PackagePath": "staticwebassets/dt_bundle.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt_bundle.css",
+      "PackagePath": "staticwebassets\\dt_bundle.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt_compare.js",
-      "PackagePath": "staticwebassets/dt_compare.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt_compare.js",
+      "PackagePath": "staticwebassets\\dt_compare.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/dt_wishlist.js",
-      "PackagePath": "staticwebassets/dt_wishlist.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\dt_wishlist.js",
+      "PackagePath": "staticwebassets\\dt_wishlist.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/empty-cart.png",
-      "PackagePath": "staticwebassets/empty-cart.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\empty-cart.png",
+      "PackagePath": "staticwebassets\\empty-cart.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/eye.svg",
-      "PackagePath": "staticwebassets/eye.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\eye.svg",
+      "PackagePath": "staticwebassets\\eye.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/facets.js",
-      "PackagePath": "staticwebassets/facets.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\facets.js",
+      "PackagePath": "staticwebassets\\facets.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/faq-tab-content.css",
-      "PackagePath": "staticwebassets/faq-tab-content.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\faq-tab-content.css",
+      "PackagePath": "staticwebassets\\faq-tab-content.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/flash-sale-banner.css",
-      "PackagePath": "staticwebassets/flash-sale-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\flash-sale-banner.css",
+      "PackagePath": "staticwebassets\\flash-sale-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/flexbanner-placeholder-1.svg",
-      "PackagePath": "staticwebassets/flexbanner-placeholder-1.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\flexbanner-placeholder-1.svg",
+      "PackagePath": "staticwebassets\\flexbanner-placeholder-1.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/flexbanner-placeholder.svg",
-      "PackagePath": "staticwebassets/flexbanner-placeholder.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\flexbanner-placeholder.svg",
+      "PackagePath": "staticwebassets\\flexbanner-placeholder.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/frequently-buy-together.css",
-      "PackagePath": "staticwebassets/frequently-buy-together.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\frequently-buy-together.css",
+      "PackagePath": "staticwebassets\\frequently-buy-together.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/global.js",
-      "PackagePath": "staticwebassets/global.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\global.js",
+      "PackagePath": "staticwebassets\\global.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/home-isotope-gallery.js",
-      "PackagePath": "staticwebassets/home-isotope-gallery.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\home-isotope-gallery.js",
+      "PackagePath": "staticwebassets\\home-isotope-gallery.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/hotspot.js",
-      "PackagePath": "staticwebassets/hotspot.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\hotspot.js",
+      "PackagePath": "staticwebassets\\hotspot.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/icn-wishlist.svg",
-      "PackagePath": "staticwebassets/icn-wishlist.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\icn-wishlist.svg",
+      "PackagePath": "staticwebassets\\icn-wishlist.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/icon-button.svg",
-      "PackagePath": "staticwebassets/icon-button.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\icon-button.svg",
+      "PackagePath": "staticwebassets\\icon-button.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/icon-left-arrow.svg",
-      "PackagePath": "staticwebassets/icon-left-arrow.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\icon-left-arrow.svg",
+      "PackagePath": "staticwebassets\\icon-left-arrow.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/icon-right-arrow.svg",
-      "PackagePath": "staticwebassets/icon-right-arrow.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\icon-right-arrow.svg",
+      "PackagePath": "staticwebassets\\icon-right-arrow.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/icon-sub-heading.svg",
-      "PackagePath": "staticwebassets/icon-sub-heading.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\icon-sub-heading.svg",
+      "PackagePath": "staticwebassets\\icon-sub-heading.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/image-with-rich-text.css",
-      "PackagePath": "staticwebassets/image-with-rich-text.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\image-with-rich-text.css",
+      "PackagePath": "staticwebassets\\image-with-rich-text.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/img-banner-typ1.css",
-      "PackagePath": "staticwebassets/img-banner-typ1.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\BanBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\BanBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/india.svg",
-      "PackagePath": "staticwebassets/india.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\BanCarom3Billiard.jpg",
+      "PackagePath": "staticwebassets\\images\\BanCarom3Billiard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/inview.js",
-      "PackagePath": "staticwebassets/inview.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\BanChinesePoolBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\BanChinesePoolBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/isotope.pkgd.js",
-      "PackagePath": "staticwebassets/isotope.pkgd.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\BanSnookerBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\BanSnookerBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/jquery-cookie-min.js",
-      "PackagePath": "staticwebassets/jquery-cookie-min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\BiBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\BiBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/jquery-zoom.css",
-      "PackagePath": "staticwebassets/jquery-zoom.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\Co1ManhBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\Co1ManhBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/jquery.ez-plus.js",
-      "PackagePath": "staticwebassets/jquery.ez-plus.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\Co2ManhBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\Co2ManhBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/jquery.min.js",
-      "PackagePath": "staticwebassets/jquery.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\Co3ManhBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\Co3ManhBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/jquery.zoom.js",
-      "PackagePath": "staticwebassets/jquery.zoom.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\CoBilliard.jpeg",
+      "PackagePath": "staticwebassets\\images\\CoBilliard.jpeg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/jquery.zoom.min.js",
-      "PackagePath": "staticwebassets/jquery.zoom.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\DenChieuSangBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\DenChieuSangBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\DoBaoVeBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\DoBaoVeBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/css/style.css",
-      "PackagePath": "staticwebassets/lib/autozen/css/style.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\GiaDoCoBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\GiaDoCoBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/css/vendor/aos.css",
-      "PackagePath": "staticwebassets/lib/autozen/css/vendor/aos.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\NiNhungBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\NiNhungBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/css/vendor/bootstrap.min.css",
-      "PackagePath": "staticwebassets/lib/autozen/css/vendor/bootstrap.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\PhuKienBilliard.png",
+      "PackagePath": "staticwebassets\\images\\PhuKienBilliard.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/css/vendor/fancybox.css",
-      "PackagePath": "staticwebassets/lib/autozen/css/vendor/fancybox.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\ThamLotSanBilliard.jpg",
+      "PackagePath": "staticwebassets\\images\\ThamLotSanBilliard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/css/vendor/glightbox.min.css",
-      "PackagePath": "staticwebassets/lib/autozen/css/vendor/glightbox.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\ban-diamond-pro-main.webp",
+      "PackagePath": "staticwebassets\\images\\ban-diamond-pro-main.webp"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/css/vendor/slick.css",
-      "PackagePath": "staticwebassets/lib/autozen/css/vendor/slick.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\bi-aramith-tournament-main.png",
+      "PackagePath": "staticwebassets\\images\\bi-aramith-tournament-main.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/104x104.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/104x104.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\co-mezz-ec7-1-detail.jpg",
+      "PackagePath": "staticwebassets\\images\\co-mezz-ec7-1-detail.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/1280x487.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/1280x487.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\co-mezz-ec7-1-main.jpg",
+      "PackagePath": "staticwebassets\\images\\co-mezz-ec7-1-main.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/1920x1280.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/1920x1280.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\co-predator-p3-main.png",
+      "PackagePath": "staticwebassets\\images\\co-predator-p3-main.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/198x52.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/198x52.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\images\\tay-kamui-clear-main.jpg",
+      "PackagePath": "staticwebassets\\images\\tay-kamui-clear-main.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/296x300.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/296x300.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\img-banner-typ1.css",
+      "PackagePath": "staticwebassets\\img-banner-typ1.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/296x550.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/296x550.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\india.svg",
+      "PackagePath": "staticwebassets\\india.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/362x362.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/362x362.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\inview.js",
+      "PackagePath": "staticwebassets\\inview.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/429x482.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/429x482.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\isotope.pkgd.js",
+      "PackagePath": "staticwebassets\\isotope.pkgd.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/55x55.jpg",
-      "PackagePath": "staticwebassets/lib/autozen/images/55x55.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\jquery-cookie-min.js",
+      "PackagePath": "staticwebassets\\jquery-cookie-min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/images/car-shop-logo-V49ANM.png",
-      "PackagePath": "staticwebassets/lib/autozen/images/car-shop-logo-V49ANM.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\jquery-zoom.css",
+      "PackagePath": "staticwebassets\\jquery-zoom.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/gallery-preview.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/gallery-preview.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\jquery.ez-plus.js",
+      "PackagePath": "staticwebassets\\jquery.ez-plus.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/script-counter.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/script-counter.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/script.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/script.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\jquery.zoom.js",
+      "PackagePath": "staticwebassets\\jquery.zoom.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/submit-form.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/submit-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\jquery.zoom.min.js",
+      "PackagePath": "staticwebassets\\jquery.zoom.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/vendor/aos.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/vendor/aos.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/vendor/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/vendor/bootstrap.bundle.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\css\\style.css",
+      "PackagePath": "staticwebassets\\lib\\autozen\\css\\style.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/vendor/fancybox.umd.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/vendor/fancybox.umd.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\css\\vendor\\aos.css",
+      "PackagePath": "staticwebassets\\lib\\autozen\\css\\vendor\\aos.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/vendor/glightbox.min.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/vendor/glightbox.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\css\\vendor\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\autozen\\css\\vendor\\bootstrap.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/vendor/jquery.min.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/vendor/jquery.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\css\\vendor\\fancybox.css",
+      "PackagePath": "staticwebassets\\lib\\autozen\\css\\vendor\\fancybox.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/js/vendor/slick.min.js",
-      "PackagePath": "staticwebassets/lib/autozen/js/vendor/slick.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\css\\vendor\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\lib\\autozen\\css\\vendor\\glightbox.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/autozen/videos/videoplayback.mp4",
-      "PackagePath": "staticwebassets/lib/autozen/videos/videoplayback.mp4"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\css\\vendor\\slick.css",
+      "PackagePath": "staticwebassets\\lib\\autozen\\css\\vendor\\slick.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/LICENSE",
-      "PackagePath": "staticwebassets/lib/bootstrap"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\104x104.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\104x104.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\1280x487.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\1280x487.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\198x52.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\198x52.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\296x300.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\296x300.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\296x550.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\296x550.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\362x362.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\362x362.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\429x482.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\429x482.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\55x55.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\55x55.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\car-shop-logo-V49ANM.png",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\car-shop-logo-V49ANM.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\images\\nen_billiard.jpg",
+      "PackagePath": "staticwebassets\\lib\\autozen\\images\\nen_billiard.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\gallery-preview.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\gallery-preview.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\script-counter.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\script-counter.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\script.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\script.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\submit-form.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\submit-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\vendor\\aos.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\vendor\\aos.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\vendor\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\vendor\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\vendor\\fancybox.umd.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\vendor\\fancybox.umd.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\vendor\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\vendor\\glightbox.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\vendor\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\vendor\\jquery.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\js\\vendor\\slick.min.js",
+      "PackagePath": "staticwebassets\\lib\\autozen\\js\\vendor\\slick.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\autozen\\videos\\videoplayback.mp4",
+      "PackagePath": "staticwebassets\\lib\\autozen\\videos\\videoplayback.mp4"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation/LICENSE.md",
-      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation/dist/additional-methods.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/dist/jquery.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/dist/jquery.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/dist/jquery.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/dist/jquery.slim.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/dist/jquery.slim.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/lib/jquery/dist/jquery.slim.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/loading-icon.gif",
-      "PackagePath": "staticwebassets/loading-icon.gif"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/magnific-popup.css",
-      "PackagePath": "staticwebassets/magnific-popup.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/magnific-popup.js",
-      "PackagePath": "staticwebassets/magnific-popup.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/media-gallery.js",
-      "PackagePath": "staticwebassets/media-gallery.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/mode.js",
-      "PackagePath": "staticwebassets/mode.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/model-newsletter-section.css",
-      "PackagePath": "staticwebassets/model-newsletter-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/newsletter-section.css",
-      "PackagePath": "staticwebassets/newsletter-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/number-counter.js",
-      "PackagePath": "staticwebassets/number-counter.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/page-compare.css",
-      "PackagePath": "staticwebassets/page-compare.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/page-wishlist.css",
-      "PackagePath": "staticwebassets/page-wishlist.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/password-modal.js",
-      "PackagePath": "staticwebassets/password-modal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/pickup-availability.js",
-      "PackagePath": "staticwebassets/pickup-availability.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/placeholder-1.svg",
-      "PackagePath": "staticwebassets/placeholder-1.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/placeholder.css",
-      "PackagePath": "staticwebassets/placeholder.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/placeholder.svg",
-      "PackagePath": "staticwebassets/placeholder.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/predictive-search.js",
-      "PackagePath": "staticwebassets/predictive-search.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-card.css",
-      "PackagePath": "staticwebassets/product-card.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-detail-page.css",
-      "PackagePath": "staticwebassets/product-detail-page.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-form.js",
-      "PackagePath": "staticwebassets/product-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-hotspot.js",
-      "PackagePath": "staticwebassets/product-hotspot.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-modal.js",
-      "PackagePath": "staticwebassets/product-modal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-model.js",
-      "PackagePath": "staticwebassets/product-model.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\loading-icon.gif",
+      "PackagePath": "staticwebassets\\loading-icon.gif"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/product-tab.css",
-      "PackagePath": "staticwebassets/product-tab.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\magnific-popup.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/quick-add.css",
-      "PackagePath": "staticwebassets/quick-add.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\magnific-popup.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/quick-add.js",
-      "PackagePath": "staticwebassets/quick-add.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\media-gallery.js",
+      "PackagePath": "staticwebassets\\media-gallery.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/recipient-form.js",
-      "PackagePath": "staticwebassets/recipient-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\mode.js",
+      "PackagePath": "staticwebassets\\mode.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/rtl-mode.css",
-      "PackagePath": "staticwebassets/rtl-mode.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\model-newsletter-section.css",
+      "PackagePath": "staticwebassets\\model-newsletter-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/search-form.js",
-      "PackagePath": "staticwebassets/search-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\newsletter-section.css",
+      "PackagePath": "staticwebassets\\newsletter-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-blog-post.css",
-      "PackagePath": "staticwebassets/section-blog-post.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\number-counter.js",
+      "PackagePath": "staticwebassets\\number-counter.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-brand-logos.css",
-      "PackagePath": "staticwebassets/section-brand-logos.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\page-compare.css",
+      "PackagePath": "staticwebassets\\page-compare.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-brand-slider.css",
-      "PackagePath": "staticwebassets/section-brand-slider.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\page-wishlist.css",
+      "PackagePath": "staticwebassets\\page-wishlist.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-collection-hero.css",
-      "PackagePath": "staticwebassets/section-collection-hero.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\password-modal.js",
+      "PackagePath": "staticwebassets\\password-modal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-collection-list.css",
-      "PackagePath": "staticwebassets/section-collection-list.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\pickup-availability.js",
+      "PackagePath": "staticwebassets\\pickup-availability.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-contact-form.css",
-      "PackagePath": "staticwebassets/section-contact-form.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\placeholder-1.svg",
+      "PackagePath": "staticwebassets\\placeholder-1.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-deal-banner.css",
-      "PackagePath": "staticwebassets/section-deal-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\placeholder.css",
+      "PackagePath": "staticwebassets\\placeholder.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-email-signup-banner.css",
-      "PackagePath": "staticwebassets/section-email-signup-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\placeholder.svg",
+      "PackagePath": "staticwebassets\\placeholder.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-featured-blog.css",
-      "PackagePath": "staticwebassets/section-featured-blog.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\predictive-search.js",
+      "PackagePath": "staticwebassets\\predictive-search.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-featured-product.css",
-      "PackagePath": "staticwebassets/section-featured-product.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-card.css",
+      "PackagePath": "staticwebassets\\product-card.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-flex-banner.css",
-      "PackagePath": "staticwebassets/section-flex-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-detail-page.css",
+      "PackagePath": "staticwebassets\\product-detail-page.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-footer.css",
-      "PackagePath": "staticwebassets/section-footer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-form.js",
+      "PackagePath": "staticwebassets\\product-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-form-image.css",
-      "PackagePath": "staticwebassets/section-form-image.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-hotspot.js",
+      "PackagePath": "staticwebassets\\product-hotspot.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-grid-banner.css",
-      "PackagePath": "staticwebassets/section-grid-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-modal.js",
+      "PackagePath": "staticwebassets\\product-modal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-home-slider-with-hot-spots.css",
-      "PackagePath": "staticwebassets/section-home-slider-with-hot-spots.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-model.js",
+      "PackagePath": "staticwebassets\\product-model.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-hotspot.css",
-      "PackagePath": "staticwebassets/section-hotspot.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\product-tab.css",
+      "PackagePath": "staticwebassets\\product-tab.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-image-banner.css",
-      "PackagePath": "staticwebassets/section-image-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\quick-add.css",
+      "PackagePath": "staticwebassets\\quick-add.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-image-with-text.css",
-      "PackagePath": "staticwebassets/section-image-with-text.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\quick-add.js",
+      "PackagePath": "staticwebassets\\quick-add.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-imagebanner.css",
-      "PackagePath": "staticwebassets/section-imagebanner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\recipient-form.js",
+      "PackagePath": "staticwebassets\\recipient-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-instagram-gallery.css",
-      "PackagePath": "staticwebassets/section-instagram-gallery.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\rtl-mode.css",
+      "PackagePath": "staticwebassets\\rtl-mode.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-main-blog.css",
-      "PackagePath": "staticwebassets/section-main-blog.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\search-form.js",
+      "PackagePath": "staticwebassets\\search-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-main-page.css",
-      "PackagePath": "staticwebassets/section-main-page.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-blog-post.css",
+      "PackagePath": "staticwebassets\\section-blog-post.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-main-product.css",
-      "PackagePath": "staticwebassets/section-main-product.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-brand-logos.css",
+      "PackagePath": "staticwebassets\\section-brand-logos.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-marquee.css",
-      "PackagePath": "staticwebassets/section-marquee.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-brand-slider.css",
+      "PackagePath": "staticwebassets\\section-brand-slider.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-masonry-banner.css",
-      "PackagePath": "staticwebassets/section-masonry-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-collection-hero.css",
+      "PackagePath": "staticwebassets\\section-collection-hero.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-multicolumn.css",
-      "PackagePath": "staticwebassets/section-multicolumn.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-collection-list.css",
+      "PackagePath": "staticwebassets\\section-collection-list.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-newsletter.css",
-      "PackagePath": "staticwebassets/section-newsletter.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-contact-form.css",
+      "PackagePath": "staticwebassets\\section-contact-form.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-number-counter.css",
-      "PackagePath": "staticwebassets/section-number-counter.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-deal-banner.css",
+      "PackagePath": "staticwebassets\\section-deal-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-password.css",
-      "PackagePath": "staticwebassets/section-password.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-email-signup-banner.css",
+      "PackagePath": "staticwebassets\\section-email-signup-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-product-recommendations.css",
-      "PackagePath": "staticwebassets/section-product-recommendations.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-featured-blog.css",
+      "PackagePath": "staticwebassets\\section-featured-blog.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-product-tab.css",
-      "PackagePath": "staticwebassets/section-product-tab.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-featured-product.css",
+      "PackagePath": "staticwebassets\\section-featured-product.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-producthotspot.css",
-      "PackagePath": "staticwebassets/section-producthotspot.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-flex-banner.css",
+      "PackagePath": "staticwebassets\\section-flex-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-recently-viewed.css",
-      "PackagePath": "staticwebassets/section-recently-viewed.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-footer.css",
+      "PackagePath": "staticwebassets\\section-footer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-rich-text.css",
-      "PackagePath": "staticwebassets/section-rich-text.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-form-image.css",
+      "PackagePath": "staticwebassets\\section-form-image.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-slider-with-promo-image.css",
-      "PackagePath": "staticwebassets/section-slider-with-promo-image.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-grid-banner.css",
+      "PackagePath": "staticwebassets\\section-grid-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-slider.css",
-      "PackagePath": "staticwebassets/section-slider.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-home-slider-with-hot-spots.css",
+      "PackagePath": "staticwebassets\\section-home-slider-with-hot-spots.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-slideshow-thumbs.css",
-      "PackagePath": "staticwebassets/section-slideshow-thumbs.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-hotspot.css",
+      "PackagePath": "staticwebassets\\section-hotspot.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-slideshow.css",
-      "PackagePath": "staticwebassets/section-slideshow.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-image-banner.css",
+      "PackagePath": "staticwebassets\\section-image-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-specification-block.css",
-      "PackagePath": "staticwebassets/section-specification-block.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-image-with-text.css",
+      "PackagePath": "staticwebassets\\section-image-with-text.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-support-block.css",
-      "PackagePath": "staticwebassets/section-support-block.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-imagebanner.css",
+      "PackagePath": "staticwebassets\\section-imagebanner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-team-section.css",
-      "PackagePath": "staticwebassets/section-team-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-instagram-gallery.css",
+      "PackagePath": "staticwebassets\\section-instagram-gallery.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-testimonial-with-video.css",
-      "PackagePath": "staticwebassets/section-testimonial-with-video.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-main-blog.css",
+      "PackagePath": "staticwebassets\\section-main-blog.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/section-testimonials.css",
-      "PackagePath": "staticwebassets/section-testimonials.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-main-page.css",
+      "PackagePath": "staticwebassets\\section-main-page.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/selectal.css",
-      "PackagePath": "staticwebassets/selectal.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-main-product.css",
+      "PackagePath": "staticwebassets\\section-main-product.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/selectal.js",
-      "PackagePath": "staticwebassets/selectal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-marquee.css",
+      "PackagePath": "staticwebassets\\section-marquee.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/share.js",
-      "PackagePath": "staticwebassets/share.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-masonry-banner.css",
+      "PackagePath": "staticwebassets\\section-masonry-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/shipping.jpg",
-      "PackagePath": "staticwebassets/shipping.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-multicolumn.css",
+      "PackagePath": "staticwebassets\\section-multicolumn.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/shipping.js",
-      "PackagePath": "staticwebassets/shipping.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-newsletter.css",
+      "PackagePath": "staticwebassets\\section-newsletter.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/shipping.png",
-      "PackagePath": "staticwebassets/shipping.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-number-counter.css",
+      "PackagePath": "staticwebassets\\section-number-counter.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/shipping.svg",
-      "PackagePath": "staticwebassets/shipping.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-password.css",
+      "PackagePath": "staticwebassets\\section-password.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/show-more.js",
-      "PackagePath": "staticwebassets/show-more.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-product-recommendations.css",
+      "PackagePath": "staticwebassets\\section-product-recommendations.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/slick.min.css",
-      "PackagePath": "staticwebassets/slick.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-product-tab.css",
+      "PackagePath": "staticwebassets\\section-product-tab.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/slick.min.js",
-      "PackagePath": "staticwebassets/slick.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-producthotspot.css",
+      "PackagePath": "staticwebassets\\section-producthotspot.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/sticky-cart.css",
-      "PackagePath": "staticwebassets/sticky-cart.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-recently-viewed.css",
+      "PackagePath": "staticwebassets\\section-recently-viewed.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/sticky-cart.js",
-      "PackagePath": "staticwebassets/sticky-cart.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-rich-text.css",
+      "PackagePath": "staticwebassets\\section-rich-text.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/sticky-sidebar.js",
-      "PackagePath": "staticwebassets/sticky-sidebar.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-slider-with-promo-image.css",
+      "PackagePath": "staticwebassets\\section-slider-with-promo-image.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/swiper-bundle.min.css",
-      "PackagePath": "staticwebassets/swiper-bundle.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-slider.css",
+      "PackagePath": "staticwebassets\\section-slider.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/swiper-bundle.min.js",
-      "PackagePath": "staticwebassets/swiper-bundle.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-slideshow-thumbs.css",
+      "PackagePath": "staticwebassets\\section-slideshow-thumbs.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template-collection.css",
-      "PackagePath": "staticwebassets/template-collection.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-slideshow.css",
+      "PackagePath": "staticwebassets\\section-slideshow.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template-giftcard.css",
-      "PackagePath": "staticwebassets/template-giftcard.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-specification-block.css",
+      "PackagePath": "staticwebassets\\section-specification-block.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/animate.min.css",
-      "PackagePath": "staticwebassets/template/css/animate.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-support-block.css",
+      "PackagePath": "staticwebassets\\section-support-block.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/base.css",
-      "PackagePath": "staticwebassets/template/css/base.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-team-section.css",
+      "PackagePath": "staticwebassets\\section-team-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/collage.css",
-      "PackagePath": "staticwebassets/template/css/collage.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-testimonial-with-video.css",
+      "PackagePath": "staticwebassets\\section-testimonial-with-video.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/collapsible-content.css",
-      "PackagePath": "staticwebassets/template/css/collapsible-content.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\section-testimonials.css",
+      "PackagePath": "staticwebassets\\section-testimonials.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/collection-slider.css",
-      "PackagePath": "staticwebassets/template/css/collection-slider.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\selectal.css",
+      "PackagePath": "staticwebassets\\selectal.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/custom-swiper.css",
-      "PackagePath": "staticwebassets/template/css/custom-swiper.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\selectal.js",
+      "PackagePath": "staticwebassets\\selectal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/custom.css",
-      "PackagePath": "staticwebassets/template/css/custom.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\share.js",
+      "PackagePath": "staticwebassets\\share.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/customer.css",
-      "PackagePath": "staticwebassets/template/css/customer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\shipping.jpg",
+      "PackagePath": "staticwebassets\\shipping.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/disclosure.css",
-      "PackagePath": "staticwebassets/template/css/disclosure.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\shipping.js",
+      "PackagePath": "staticwebassets\\shipping.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-accordion.css",
-      "PackagePath": "staticwebassets/template/css/dt-accordion.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\shipping.png",
+      "PackagePath": "staticwebassets\\shipping.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-article-card.css",
-      "PackagePath": "staticwebassets/template/css/dt-article-card.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\shipping.svg",
+      "PackagePath": "staticwebassets\\shipping.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-badge.css",
-      "PackagePath": "staticwebassets/template/css/dt-badge.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\show-more.js",
+      "PackagePath": "staticwebassets\\show-more.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-cart-drawer.css",
-      "PackagePath": "staticwebassets/template/css/dt-cart-drawer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\slick.min.css",
+      "PackagePath": "staticwebassets\\slick.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-cart-items.css",
-      "PackagePath": "staticwebassets/template/css/dt-cart-items.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\slick.min.js",
+      "PackagePath": "staticwebassets\\slick.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-cart-notification.css",
-      "PackagePath": "staticwebassets/template/css/dt-cart-notification.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\sticky-cart.css",
+      "PackagePath": "staticwebassets\\sticky-cart.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-cart.css",
-      "PackagePath": "staticwebassets/template/css/dt-cart.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\sticky-cart.js",
+      "PackagePath": "staticwebassets\\sticky-cart.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-complementary-products.css",
-      "PackagePath": "staticwebassets/template/css/dt-complementary-products.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\sticky-sidebar.js",
+      "PackagePath": "staticwebassets\\sticky-sidebar.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-deferred-media.css",
-      "PackagePath": "staticwebassets/template/css/dt-deferred-media.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\swiper-bundle.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-discounts.css",
-      "PackagePath": "staticwebassets/template/css/dt-discounts.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\swiper-bundle.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-facets.css",
-      "PackagePath": "staticwebassets/template/css/dt-facets.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template-collection.css",
+      "PackagePath": "staticwebassets\\template-collection.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-list-menu.css",
-      "PackagePath": "staticwebassets/template/css/dt-list-menu.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template-giftcard.css",
+      "PackagePath": "staticwebassets\\template-giftcard.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-list-payment.css",
-      "PackagePath": "staticwebassets/template/css/dt-list-payment.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\animate.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-list-social.css",
-      "PackagePath": "staticwebassets/template/css/dt-list-social.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\base.css",
+      "PackagePath": "staticwebassets\\template\\css\\base.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-loading-overlay.css",
-      "PackagePath": "staticwebassets/template/css/dt-loading-overlay.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\collage.css",
+      "PackagePath": "staticwebassets\\template\\css\\collage.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-mega-menu.css",
-      "PackagePath": "staticwebassets/template/css/dt-mega-menu.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\collapsible-content.css",
+      "PackagePath": "staticwebassets\\template\\css\\collapsible-content.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-menu-drawer.css",
-      "PackagePath": "staticwebassets/template/css/dt-menu-drawer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\collection-slider.css",
+      "PackagePath": "staticwebassets\\template\\css\\collection-slider.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-modal-video.css",
-      "PackagePath": "staticwebassets/template/css/dt-modal-video.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\custom-swiper.css",
+      "PackagePath": "staticwebassets\\template\\css\\custom-swiper.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-model-viewer-ui.css",
-      "PackagePath": "staticwebassets/template/css/dt-model-viewer-ui.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\custom.css",
+      "PackagePath": "staticwebassets\\template\\css\\custom.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-pagination.css",
-      "PackagePath": "staticwebassets/template/css/dt-pagination.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\customer.css",
+      "PackagePath": "staticwebassets\\template\\css\\customer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-pickup-availability.css",
-      "PackagePath": "staticwebassets/template/css/dt-pickup-availability.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\disclosure.css",
+      "PackagePath": "staticwebassets\\template\\css\\disclosure.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-predictive-search.css",
-      "PackagePath": "staticwebassets/template/css/dt-predictive-search.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-accordion.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-accordion.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-price.css",
-      "PackagePath": "staticwebassets/template/css/dt-price.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-article-card.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-article-card.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-product-model.css",
-      "PackagePath": "staticwebassets/template/css/dt-product-model.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-badge.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-badge.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-rating.css",
-      "PackagePath": "staticwebassets/template/css/dt-rating.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-cart-drawer.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-cart-drawer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-rte.css",
-      "PackagePath": "staticwebassets/template/css/dt-rte.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-cart-items.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-cart-items.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-search.css",
-      "PackagePath": "staticwebassets/template/css/dt-search.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-cart-notification.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-cart-notification.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-show-more.css",
-      "PackagePath": "staticwebassets/template/css/dt-show-more.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-cart.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-cart.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-swiper.css",
-      "PackagePath": "staticwebassets/template/css/dt-swiper.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-complementary-products.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-complementary-products.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt-totals.css",
-      "PackagePath": "staticwebassets/template/css/dt-totals.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-deferred-media.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-deferred-media.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/dt_bundle.css",
-      "PackagePath": "staticwebassets/template/css/dt_bundle.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-discounts.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-discounts.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/faq-tab-content.css",
-      "PackagePath": "staticwebassets/template/css/faq-tab-content.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-facets.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-facets.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/flash-sale-banner.css",
-      "PackagePath": "staticwebassets/template/css/flash-sale-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-list-menu.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-list-menu.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/frequently-buy-together.css",
-      "PackagePath": "staticwebassets/template/css/frequently-buy-together.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-list-payment.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-list-payment.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/image-with-rich-text.css",
-      "PackagePath": "staticwebassets/template/css/image-with-rich-text.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-list-social.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-list-social.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/img-banner-typ1.css",
-      "PackagePath": "staticwebassets/template/css/img-banner-typ1.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-loading-overlay.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-loading-overlay.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/jquery-zoom.css",
-      "PackagePath": "staticwebassets/template/css/jquery-zoom.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-mega-menu.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-mega-menu.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/magnific-popup.css",
-      "PackagePath": "staticwebassets/template/css/magnific-popup.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-menu-drawer.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-menu-drawer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/model-newsletter-section.css",
-      "PackagePath": "staticwebassets/template/css/model-newsletter-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-modal-video.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-modal-video.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/newsletter-section.css",
-      "PackagePath": "staticwebassets/template/css/newsletter-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-model-viewer-ui.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-model-viewer-ui.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/page-compare.css",
-      "PackagePath": "staticwebassets/template/css/page-compare.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-pagination.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-pagination.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/page-wishlist.css",
-      "PackagePath": "staticwebassets/template/css/page-wishlist.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-pickup-availability.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-pickup-availability.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/placeholder.css",
-      "PackagePath": "staticwebassets/template/css/placeholder.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-predictive-search.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-predictive-search.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/product-card.css",
-      "PackagePath": "staticwebassets/template/css/product-card.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-price.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-price.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/product-detail-page.css",
-      "PackagePath": "staticwebassets/template/css/product-detail-page.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-product-model.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-product-model.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/product-tab.css",
-      "PackagePath": "staticwebassets/template/css/product-tab.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-rating.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-rating.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/quick-add.css",
-      "PackagePath": "staticwebassets/template/css/quick-add.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-rte.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-rte.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/rtl-mode.css",
-      "PackagePath": "staticwebassets/template/css/rtl-mode.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-search.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-search.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-blog-post.css",
-      "PackagePath": "staticwebassets/template/css/section-blog-post.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-show-more.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-show-more.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-brand-logos.css",
-      "PackagePath": "staticwebassets/template/css/section-brand-logos.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-swiper.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-swiper.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-brand-slider.css",
-      "PackagePath": "staticwebassets/template/css/section-brand-slider.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt-totals.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt-totals.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-collection-hero.css",
-      "PackagePath": "staticwebassets/template/css/section-collection-hero.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\dt_bundle.css",
+      "PackagePath": "staticwebassets\\template\\css\\dt_bundle.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-collection-list.css",
-      "PackagePath": "staticwebassets/template/css/section-collection-list.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\faq-tab-content.css",
+      "PackagePath": "staticwebassets\\template\\css\\faq-tab-content.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-contact-form.css",
-      "PackagePath": "staticwebassets/template/css/section-contact-form.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\flash-sale-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\flash-sale-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-deal-banner.css",
-      "PackagePath": "staticwebassets/template/css/section-deal-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\frequently-buy-together.css",
+      "PackagePath": "staticwebassets\\template\\css\\frequently-buy-together.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-email-signup-banner.css",
-      "PackagePath": "staticwebassets/template/css/section-email-signup-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\image-with-rich-text.css",
+      "PackagePath": "staticwebassets\\template\\css\\image-with-rich-text.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-featured-blog.css",
-      "PackagePath": "staticwebassets/template/css/section-featured-blog.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\img-banner-typ1.css",
+      "PackagePath": "staticwebassets\\template\\css\\img-banner-typ1.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-featured-product.css",
-      "PackagePath": "staticwebassets/template/css/section-featured-product.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\jquery-zoom.css",
+      "PackagePath": "staticwebassets\\template\\css\\jquery-zoom.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-flex-banner.css",
-      "PackagePath": "staticwebassets/template/css/section-flex-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\template\\css\\magnific-popup.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-footer.css",
-      "PackagePath": "staticwebassets/template/css/section-footer.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\model-newsletter-section.css",
+      "PackagePath": "staticwebassets\\template\\css\\model-newsletter-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-form-image.css",
-      "PackagePath": "staticwebassets/template/css/section-form-image.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\newsletter-section.css",
+      "PackagePath": "staticwebassets\\template\\css\\newsletter-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-grid-banner.css",
-      "PackagePath": "staticwebassets/template/css/section-grid-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\page-compare.css",
+      "PackagePath": "staticwebassets\\template\\css\\page-compare.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-home-slider-with-hot-spots.css",
-      "PackagePath": "staticwebassets/template/css/section-home-slider-with-hot-spots.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\page-wishlist.css",
+      "PackagePath": "staticwebassets\\template\\css\\page-wishlist.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-hotspot.css",
-      "PackagePath": "staticwebassets/template/css/section-hotspot.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\placeholder.css",
+      "PackagePath": "staticwebassets\\template\\css\\placeholder.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-image-banner.css",
-      "PackagePath": "staticwebassets/template/css/section-image-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\product-card.css",
+      "PackagePath": "staticwebassets\\template\\css\\product-card.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-image-with-text.css",
-      "PackagePath": "staticwebassets/template/css/section-image-with-text.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\product-detail-page.css",
+      "PackagePath": "staticwebassets\\template\\css\\product-detail-page.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-imagebanner.css",
-      "PackagePath": "staticwebassets/template/css/section-imagebanner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\product-tab.css",
+      "PackagePath": "staticwebassets\\template\\css\\product-tab.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-instagram-gallery.css",
-      "PackagePath": "staticwebassets/template/css/section-instagram-gallery.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\quick-add.css",
+      "PackagePath": "staticwebassets\\template\\css\\quick-add.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-main-blog.css",
-      "PackagePath": "staticwebassets/template/css/section-main-blog.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\rtl-mode.css",
+      "PackagePath": "staticwebassets\\template\\css\\rtl-mode.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-main-page.css",
-      "PackagePath": "staticwebassets/template/css/section-main-page.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-blog-post.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-blog-post.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-main-product.css",
-      "PackagePath": "staticwebassets/template/css/section-main-product.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-brand-logos.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-brand-logos.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-marquee.css",
-      "PackagePath": "staticwebassets/template/css/section-marquee.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-brand-slider.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-brand-slider.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-masonry-banner.css",
-      "PackagePath": "staticwebassets/template/css/section-masonry-banner.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-collection-hero.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-collection-hero.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-multicolumn.css",
-      "PackagePath": "staticwebassets/template/css/section-multicolumn.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-collection-list.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-collection-list.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-newsletter.css",
-      "PackagePath": "staticwebassets/template/css/section-newsletter.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-contact-form.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-contact-form.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-number-counter.css",
-      "PackagePath": "staticwebassets/template/css/section-number-counter.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-deal-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-deal-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-password.css",
-      "PackagePath": "staticwebassets/template/css/section-password.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-email-signup-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-email-signup-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-product-recommendations.css",
-      "PackagePath": "staticwebassets/template/css/section-product-recommendations.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-featured-blog.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-featured-blog.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-product-tab.css",
-      "PackagePath": "staticwebassets/template/css/section-product-tab.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-featured-product.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-featured-product.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-producthotspot.css",
-      "PackagePath": "staticwebassets/template/css/section-producthotspot.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-flex-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-flex-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-recently-viewed.css",
-      "PackagePath": "staticwebassets/template/css/section-recently-viewed.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-footer.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-footer.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-rich-text.css",
-      "PackagePath": "staticwebassets/template/css/section-rich-text.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-form-image.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-form-image.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-slider-with-promo-image.css",
-      "PackagePath": "staticwebassets/template/css/section-slider-with-promo-image.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-grid-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-grid-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-slider.css",
-      "PackagePath": "staticwebassets/template/css/section-slider.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-home-slider-with-hot-spots.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-home-slider-with-hot-spots.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-slideshow-thumbs.css",
-      "PackagePath": "staticwebassets/template/css/section-slideshow-thumbs.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-hotspot.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-hotspot.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-slideshow.css",
-      "PackagePath": "staticwebassets/template/css/section-slideshow.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-image-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-image-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-specification-block.css",
-      "PackagePath": "staticwebassets/template/css/section-specification-block.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-image-with-text.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-image-with-text.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-support-block.css",
-      "PackagePath": "staticwebassets/template/css/section-support-block.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-imagebanner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-imagebanner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-team-section.css",
-      "PackagePath": "staticwebassets/template/css/section-team-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-instagram-gallery.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-instagram-gallery.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-testimonial-with-video.css",
-      "PackagePath": "staticwebassets/template/css/section-testimonial-with-video.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-main-blog.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-main-blog.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/section-testimonials.css",
-      "PackagePath": "staticwebassets/template/css/section-testimonials.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-main-page.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-main-page.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/selectal.css",
-      "PackagePath": "staticwebassets/template/css/selectal.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-main-product.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-main-product.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/slick.min.css",
-      "PackagePath": "staticwebassets/template/css/slick.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-marquee.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-marquee.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/sticky-cart.css",
-      "PackagePath": "staticwebassets/template/css/sticky-cart.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-masonry-banner.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-masonry-banner.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/swiper-bundle.min.css",
-      "PackagePath": "staticwebassets/template/css/swiper-bundle.min.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-multicolumn.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-multicolumn.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/template-collection.css",
-      "PackagePath": "staticwebassets/template/css/template-collection.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-newsletter.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-newsletter.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/template-giftcard.css",
-      "PackagePath": "staticwebassets/template/css/template-giftcard.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-number-counter.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-number-counter.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/video-pop-up.css",
-      "PackagePath": "staticwebassets/template/css/video-pop-up.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-password.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-password.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/css/video-section.css",
-      "PackagePath": "staticwebassets/template/css/video-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-product-recommendations.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-product-recommendations.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/Compare (1).svg",
-      "PackagePath": "staticwebassets/template/images/Compare (1).svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-product-tab.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-product-tab.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/Whislist (1).svg",
-      "PackagePath": "staticwebassets/template/images/Whislist (1).svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-producthotspot.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-producthotspot.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/collection-placeholder-1.svg",
-      "PackagePath": "staticwebassets/template/images/collection-placeholder-1.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-recently-viewed.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-recently-viewed.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/collection-placeholder.svg",
-      "PackagePath": "staticwebassets/template/images/collection-placeholder.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-rich-text.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-rich-text.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/compare-fill.svg",
-      "PackagePath": "staticwebassets/template/images/compare-fill.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-slider-with-promo-image.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-slider-with-promo-image.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/compare-icons.svg",
-      "PackagePath": "staticwebassets/template/images/compare-icons.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-slider.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-slider.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/compare.svg",
-      "PackagePath": "staticwebassets/template/images/compare.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-slideshow-thumbs.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-slideshow-thumbs.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/compare2.svg",
-      "PackagePath": "staticwebassets/template/images/compare2.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-slideshow.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-slideshow.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/compare3.svg",
-      "PackagePath": "staticwebassets/template/images/compare3.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-specification-block.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-specification-block.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/empty-cart.png",
-      "PackagePath": "staticwebassets/template/images/empty-cart.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-support-block.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-support-block.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/eye.svg",
-      "PackagePath": "staticwebassets/template/images/eye.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-team-section.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-team-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/flexbanner-placeholder-1.svg",
-      "PackagePath": "staticwebassets/template/images/flexbanner-placeholder-1.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-testimonial-with-video.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-testimonial-with-video.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/flexbanner-placeholder.svg",
-      "PackagePath": "staticwebassets/template/images/flexbanner-placeholder.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\section-testimonials.css",
+      "PackagePath": "staticwebassets\\template\\css\\section-testimonials.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/icn-wishlist.svg",
-      "PackagePath": "staticwebassets/template/images/icn-wishlist.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\selectal.css",
+      "PackagePath": "staticwebassets\\template\\css\\selectal.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/icon-button.svg",
-      "PackagePath": "staticwebassets/template/images/icon-button.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\slick.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\slick.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/icon-left-arrow.svg",
-      "PackagePath": "staticwebassets/template/images/icon-left-arrow.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\sticky-cart.css",
+      "PackagePath": "staticwebassets\\template\\css\\sticky-cart.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/icon-right-arrow.svg",
-      "PackagePath": "staticwebassets/template/images/icon-right-arrow.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\swiper-bundle.min.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/icon-sub-heading.svg",
-      "PackagePath": "staticwebassets/template/images/icon-sub-heading.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\template-collection.css",
+      "PackagePath": "staticwebassets\\template\\css\\template-collection.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/india.svg",
-      "PackagePath": "staticwebassets/template/images/india.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\template-giftcard.css",
+      "PackagePath": "staticwebassets\\template\\css\\template-giftcard.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/placeholder-1.svg",
-      "PackagePath": "staticwebassets/template/images/placeholder-1.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\video-pop-up.css",
+      "PackagePath": "staticwebassets\\template\\css\\video-pop-up.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/placeholder.svg",
-      "PackagePath": "staticwebassets/template/images/placeholder.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\css\\video-section.css",
+      "PackagePath": "staticwebassets\\template\\css\\video-section.css"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/shipping.jpg",
-      "PackagePath": "staticwebassets/template/images/shipping.jpg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\Compare (1).svg",
+      "PackagePath": "staticwebassets\\template\\images\\Compare (1).svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/shipping.png",
-      "PackagePath": "staticwebassets/template/images/shipping.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\Whislist (1).svg",
+      "PackagePath": "staticwebassets\\template\\images\\Whislist (1).svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/shipping.svg",
-      "PackagePath": "staticwebassets/template/images/shipping.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\collection-placeholder-1.svg",
+      "PackagePath": "staticwebassets\\template\\images\\collection-placeholder-1.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist-fill-icons.svg",
-      "PackagePath": "staticwebassets/template/images/wishlist-fill-icons.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\collection-placeholder.svg",
+      "PackagePath": "staticwebassets\\template\\images\\collection-placeholder.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist-fill.svg",
-      "PackagePath": "staticwebassets/template/images/wishlist-fill.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\compare-fill.svg",
+      "PackagePath": "staticwebassets\\template\\images\\compare-fill.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist-icon-new.svg",
-      "PackagePath": "staticwebassets/template/images/wishlist-icon-new.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\compare-icons.svg",
+      "PackagePath": "staticwebassets\\template\\images\\compare-icons.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist-icons.svg",
-      "PackagePath": "staticwebassets/template/images/wishlist-icons.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\compare.svg",
+      "PackagePath": "staticwebassets\\template\\images\\compare.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist.png",
-      "PackagePath": "staticwebassets/template/images/wishlist.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\compare2.svg",
+      "PackagePath": "staticwebassets\\template\\images\\compare2.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist.svg",
-      "PackagePath": "staticwebassets/template/images/wishlist.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\compare3.svg",
+      "PackagePath": "staticwebassets\\template\\images\\compare3.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/images/wishlist2.svg",
-      "PackagePath": "staticwebassets/template/images/wishlist2.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\empty-cart.png",
+      "PackagePath": "staticwebassets\\template\\images\\empty-cart.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/ajaxinate.min.js",
-      "PackagePath": "staticwebassets/template/js/ajaxinate.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\eye.svg",
+      "PackagePath": "staticwebassets\\template\\images\\eye.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/axios.min.js",
-      "PackagePath": "staticwebassets/template/js/axios.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\flexbanner-placeholder-1.svg",
+      "PackagePath": "staticwebassets\\template\\images\\flexbanner-placeholder-1.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/cart-drawer.js",
-      "PackagePath": "staticwebassets/template/js/cart-drawer.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\flexbanner-placeholder.svg",
+      "PackagePath": "staticwebassets\\template\\images\\flexbanner-placeholder.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/cart-notification.js",
-      "PackagePath": "staticwebassets/template/js/cart-notification.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\icn-wishlist.svg",
+      "PackagePath": "staticwebassets\\template\\images\\icn-wishlist.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/cart.js",
-      "PackagePath": "staticwebassets/template/js/cart.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\icon-button.svg",
+      "PackagePath": "staticwebassets\\template\\images\\icon-button.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/customer.js",
-      "PackagePath": "staticwebassets/template/js/customer.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\icon-left-arrow.svg",
+      "PackagePath": "staticwebassets\\template\\images\\icon-left-arrow.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/dT_bundle.js",
-      "PackagePath": "staticwebassets/template/js/dT_bundle.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\icon-right-arrow.svg",
+      "PackagePath": "staticwebassets\\template\\images\\icon-right-arrow.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/dT_bundle_base.js",
-      "PackagePath": "staticwebassets/template/js/dT_bundle_base.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\icon-sub-heading.svg",
+      "PackagePath": "staticwebassets\\template\\images\\icon-sub-heading.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/details-disclosure.js",
-      "PackagePath": "staticwebassets/template/js/details-disclosure.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\india.svg",
+      "PackagePath": "staticwebassets\\template\\images\\india.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/details-modal.js",
-      "PackagePath": "staticwebassets/template/js/details-modal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\placeholder-1.svg",
+      "PackagePath": "staticwebassets\\template\\images\\placeholder-1.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/dt-mega-menu.js",
-      "PackagePath": "staticwebassets/template/js/dt-mega-menu.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\placeholder.svg",
+      "PackagePath": "staticwebassets\\template\\images\\placeholder.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/dt-theme.js",
-      "PackagePath": "staticwebassets/template/js/dt-theme.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\shipping.jpg",
+      "PackagePath": "staticwebassets\\template\\images\\shipping.jpg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/dt_compare.js",
-      "PackagePath": "staticwebassets/template/js/dt_compare.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\shipping.png",
+      "PackagePath": "staticwebassets\\template\\images\\shipping.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/dt_wishlist.js",
-      "PackagePath": "staticwebassets/template/js/dt_wishlist.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\shipping.svg",
+      "PackagePath": "staticwebassets\\template\\images\\shipping.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/facets.js",
-      "PackagePath": "staticwebassets/template/js/facets.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist-fill-icons.svg",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist-fill-icons.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/global.js",
-      "PackagePath": "staticwebassets/template/js/global.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist-fill.svg",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist-fill.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/home-isotope-gallery.js",
-      "PackagePath": "staticwebassets/template/js/home-isotope-gallery.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist-icon-new.svg",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist-icon-new.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/hotspot.js",
-      "PackagePath": "staticwebassets/template/js/hotspot.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist-icons.svg",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist-icons.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/inview.js",
-      "PackagePath": "staticwebassets/template/js/inview.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist.png",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist.png"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/isotope.pkgd.js",
-      "PackagePath": "staticwebassets/template/js/isotope.pkgd.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist.svg",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/jquery-cookie-min.js",
-      "PackagePath": "staticwebassets/template/js/jquery-cookie-min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\images\\wishlist2.svg",
+      "PackagePath": "staticwebassets\\template\\images\\wishlist2.svg"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/jquery.ez-plus.js",
-      "PackagePath": "staticwebassets/template/js/jquery.ez-plus.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\ajaxinate.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\ajaxinate.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/jquery.min.js",
-      "PackagePath": "staticwebassets/template/js/jquery.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\axios.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\axios.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/jquery.zoom.js",
-      "PackagePath": "staticwebassets/template/js/jquery.zoom.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\cart-drawer.js",
+      "PackagePath": "staticwebassets\\template\\js\\cart-drawer.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/jquery.zoom.min.js",
-      "PackagePath": "staticwebassets/template/js/jquery.zoom.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\cart-notification.js",
+      "PackagePath": "staticwebassets\\template\\js\\cart-notification.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/magnific-popup.js",
-      "PackagePath": "staticwebassets/template/js/magnific-popup.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\cart.js",
+      "PackagePath": "staticwebassets\\template\\js\\cart.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/media-gallery.js",
-      "PackagePath": "staticwebassets/template/js/media-gallery.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\customer.js",
+      "PackagePath": "staticwebassets\\template\\js\\customer.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/mode.js",
-      "PackagePath": "staticwebassets/template/js/mode.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\dT_bundle.js",
+      "PackagePath": "staticwebassets\\template\\js\\dT_bundle.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/number-counter.js",
-      "PackagePath": "staticwebassets/template/js/number-counter.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\dT_bundle_base.js",
+      "PackagePath": "staticwebassets\\template\\js\\dT_bundle_base.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/password-modal.js",
-      "PackagePath": "staticwebassets/template/js/password-modal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\details-disclosure.js",
+      "PackagePath": "staticwebassets\\template\\js\\details-disclosure.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/pickup-availability.js",
-      "PackagePath": "staticwebassets/template/js/pickup-availability.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\details-modal.js",
+      "PackagePath": "staticwebassets\\template\\js\\details-modal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/predictive-search.js",
-      "PackagePath": "staticwebassets/template/js/predictive-search.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\dt-mega-menu.js",
+      "PackagePath": "staticwebassets\\template\\js\\dt-mega-menu.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/product-form.js",
-      "PackagePath": "staticwebassets/template/js/product-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\dt-theme.js",
+      "PackagePath": "staticwebassets\\template\\js\\dt-theme.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/product-hotspot.js",
-      "PackagePath": "staticwebassets/template/js/product-hotspot.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\dt_compare.js",
+      "PackagePath": "staticwebassets\\template\\js\\dt_compare.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/product-modal.js",
-      "PackagePath": "staticwebassets/template/js/product-modal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\dt_wishlist.js",
+      "PackagePath": "staticwebassets\\template\\js\\dt_wishlist.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/product-model.js",
-      "PackagePath": "staticwebassets/template/js/product-model.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\facets.js",
+      "PackagePath": "staticwebassets\\template\\js\\facets.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/quick-add.js",
-      "PackagePath": "staticwebassets/template/js/quick-add.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\global.js",
+      "PackagePath": "staticwebassets\\template\\js\\global.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/recipient-form.js",
-      "PackagePath": "staticwebassets/template/js/recipient-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\home-isotope-gallery.js",
+      "PackagePath": "staticwebassets\\template\\js\\home-isotope-gallery.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/search-form.js",
-      "PackagePath": "staticwebassets/template/js/search-form.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\hotspot.js",
+      "PackagePath": "staticwebassets\\template\\js\\hotspot.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/selectal.js",
-      "PackagePath": "staticwebassets/template/js/selectal.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\inview.js",
+      "PackagePath": "staticwebassets\\template\\js\\inview.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/share.js",
-      "PackagePath": "staticwebassets/template/js/share.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\isotope.pkgd.js",
+      "PackagePath": "staticwebassets\\template\\js\\isotope.pkgd.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/shipping.js",
-      "PackagePath": "staticwebassets/template/js/shipping.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\jquery-cookie-min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery-cookie-min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/show-more.js",
-      "PackagePath": "staticwebassets/template/js/show-more.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\jquery.ez-plus.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.ez-plus.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/slick.min.js",
-      "PackagePath": "staticwebassets/template/js/slick.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/sticky-cart.js",
-      "PackagePath": "staticwebassets/template/js/sticky-cart.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\jquery.zoom.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.zoom.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/sticky-sidebar.js",
-      "PackagePath": "staticwebassets/template/js/sticky-sidebar.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\jquery.zoom.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\jquery.zoom.min.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/swiper-bundle.min.js",
-      "PackagePath": "staticwebassets/template/js/swiper-bundle.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\template\\js\\magnific-popup.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/theme-editor.js",
-      "PackagePath": "staticwebassets/template/js/theme-editor.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\media-gallery.js",
+      "PackagePath": "staticwebassets\\template\\js\\media-gallery.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/video-pop-up.js",
-      "PackagePath": "staticwebassets/template/js/video-pop-up.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\mode.js",
+      "PackagePath": "staticwebassets\\template\\js\\mode.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/template/js/wow.min.js",
-      "PackagePath": "staticwebassets/template/js/wow.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\number-counter.js",
+      "PackagePath": "staticwebassets\\template\\js\\number-counter.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/theme-editor.js",
-      "PackagePath": "staticwebassets/theme-editor.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\password-modal.js",
+      "PackagePath": "staticwebassets\\template\\js\\password-modal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/video-pop-up.css",
-      "PackagePath": "staticwebassets/video-pop-up.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\pickup-availability.js",
+      "PackagePath": "staticwebassets\\template\\js\\pickup-availability.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/video-pop-up.js",
-      "PackagePath": "staticwebassets/video-pop-up.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\predictive-search.js",
+      "PackagePath": "staticwebassets\\template\\js\\predictive-search.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/video-section.css",
-      "PackagePath": "staticwebassets/video-section.css"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\product-form.js",
+      "PackagePath": "staticwebassets\\template\\js\\product-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist-fill-icons.svg",
-      "PackagePath": "staticwebassets/wishlist-fill-icons.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\product-hotspot.js",
+      "PackagePath": "staticwebassets\\template\\js\\product-hotspot.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist-fill.svg",
-      "PackagePath": "staticwebassets/wishlist-fill.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\product-modal.js",
+      "PackagePath": "staticwebassets\\template\\js\\product-modal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist-icon-new.svg",
-      "PackagePath": "staticwebassets/wishlist-icon-new.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\product-model.js",
+      "PackagePath": "staticwebassets\\template\\js\\product-model.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist-icons.svg",
-      "PackagePath": "staticwebassets/wishlist-icons.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\quick-add.js",
+      "PackagePath": "staticwebassets\\template\\js\\quick-add.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist.png",
-      "PackagePath": "staticwebassets/wishlist.png"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\recipient-form.js",
+      "PackagePath": "staticwebassets\\template\\js\\recipient-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist.svg",
-      "PackagePath": "staticwebassets/wishlist.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\search-form.js",
+      "PackagePath": "staticwebassets\\template\\js\\search-form.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wishlist2.svg",
-      "PackagePath": "staticwebassets/wishlist2.svg"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\selectal.js",
+      "PackagePath": "staticwebassets\\template\\js\\selectal.js"
     },
     {
-      "Id": "/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/src/BilliardShop.Web/wwwroot/wow.min.js",
-      "PackagePath": "staticwebassets/wow.min.js"
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\share.js",
+      "PackagePath": "staticwebassets\\template\\js\\share.js"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BilliardShop.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\shipping.js",
+      "PackagePath": "staticwebassets\\template\\js\\shipping.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\show-more.js",
+      "PackagePath": "staticwebassets\\template\\js\\show-more.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\slick.min.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\sticky-cart.js",
+      "PackagePath": "staticwebassets\\template\\js\\sticky-cart.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\sticky-sidebar.js",
+      "PackagePath": "staticwebassets\\template\\js\\sticky-sidebar.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\theme-editor.js",
+      "PackagePath": "staticwebassets\\template\\js\\theme-editor.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\video-pop-up.js",
+      "PackagePath": "staticwebassets\\template\\js\\video-pop-up.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\template\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\wow.min.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\theme-editor.js",
+      "PackagePath": "staticwebassets\\theme-editor.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\video-pop-up.css",
+      "PackagePath": "staticwebassets\\video-pop-up.css"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\video-pop-up.js",
+      "PackagePath": "staticwebassets\\video-pop-up.js"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\video-section.css",
+      "PackagePath": "staticwebassets\\video-section.css"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist-fill-icons.svg",
+      "PackagePath": "staticwebassets\\wishlist-fill-icons.svg"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist-fill.svg",
+      "PackagePath": "staticwebassets\\wishlist-fill.svg"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist-icon-new.svg",
+      "PackagePath": "staticwebassets\\wishlist-icon-new.svg"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist-icons.svg",
+      "PackagePath": "staticwebassets\\wishlist-icons.svg"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist.png",
+      "PackagePath": "staticwebassets\\wishlist.png"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist.svg",
+      "PackagePath": "staticwebassets\\wishlist.svg"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wishlist2.svg",
+      "PackagePath": "staticwebassets\\wishlist2.svg"
+    },
+    {
+      "Id": "D:\\CODE\\BILLIARD_SHOP\\BilliardShop\\src\\BilliardShop.Web\\wwwroot\\wow.min.js",
+      "PackagePath": "staticwebassets\\wow.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BilliardShop.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BilliardShop.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BilliardShop.Web.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.BilliardShop.Web.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.BilliardShop.Web.props",
       "PackagePath": "build\\BilliardShop.Web.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.BilliardShop.Web.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BilliardShop.Web.props",
       "PackagePath": "buildMultiTargeting\\BilliardShop.Web.props"
     },
     {
-      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.BilliardShop.Web.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.BilliardShop.Web.props",
       "PackagePath": "buildTransitive\\BilliardShop.Web.props"
     }
   ],

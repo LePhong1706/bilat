@@ -80,6 +80,7 @@ public class CartService : ICartService
 
             await _unitOfWork.GioHangRepository.AddAsync(gioHang);
         }
+        // await _unitOfWork.SaveAsync();
     }
 
     public async Task UpdateQuantityAsync(int gioHangId, int newQuantity)

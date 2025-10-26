@@ -1371,14 +1371,14 @@
     <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/css/style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\css\style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ccAxmBrLKstj0Uuz8VWWagr4UaBSr2JvkZM6jGu9wWo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28630"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ccAxmBrLKstj0Uuz8VWWagr4UaBSr2JvkZM6jGu9wWo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 17:45:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-i\u002B\u002BhFOFbuUQQY7N7djqKa5Nasml6mSEYHDv8Bz1v3UE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28619"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022i\u002B\u002BhFOFbuUQQY7N7djqKa5Nasml6mSEYHDv8Bz1v3UE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 20:36:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/css/style.t130d9kijp.css">
+    <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/css/style.jij7lnyypo.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\css\style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t130d9kijp"},{"Name":"integrity","Value":"sha256-ccAxmBrLKstj0Uuz8VWWagr4UaBSr2JvkZM6jGu9wWo="},{"Name":"label","Value":"_content/BilliardShop.Web/lib/autozen/css/style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28630"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ccAxmBrLKstj0Uuz8VWWagr4UaBSr2JvkZM6jGu9wWo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 17:45:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jij7lnyypo"},{"Name":"integrity","Value":"sha256-i\u002B\u002BhFOFbuUQQY7N7djqKa5Nasml6mSEYHDv8Bz1v3UE="},{"Name":"label","Value":"_content/BilliardShop.Web/lib/autozen/css/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28619"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022i\u002B\u002BhFOFbuUQQY7N7djqKa5Nasml6mSEYHDv8Bz1v3UE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 20:36:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/css/vendor/aos.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\css\vendor\aos.css'))</AssetFile>
@@ -1536,17 +1536,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EidLtjWuujguHOKkh0AkhcITI3ByU7h1RHYM1E0h4AM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"445"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022EidLtjWuujguHOKkh0AkhcITI3ByU7h1RHYM1E0h4AM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 17:45:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/images/car-shop-logo-V49ANM.gaf7wqmh75.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\images\car-shop-logo-V49ANM.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gaf7wqmh75"},{"Name":"integrity","Value":"sha256-2E6pIn/qbY2qD8YIP4eeOUe/qN6uyyxTGIgIs8r3sDQ="},{"Name":"label","Value":"_content/BilliardShop.Web/lib/autozen/images/car-shop-logo-V49ANM.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"559450"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00222E6pIn/qbY2qD8YIP4eeOUe/qN6uyyxTGIgIs8r3sDQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 20:51:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/images/car-shop-logo-V49ANM.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\images\car-shop-logo-V49ANM.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YKpvFDbb\u002BjGl2dUGcecsoA2LbXqgyBDLsnwOOLePRL4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1718337"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022YKpvFDbb\u002BjGl2dUGcecsoA2LbXqgyBDLsnwOOLePRL4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 19:16:17 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/images/car-shop-logo-V49ANM.shq23clmgf.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\images\car-shop-logo-V49ANM.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"shq23clmgf"},{"Name":"integrity","Value":"sha256-YKpvFDbb\u002BjGl2dUGcecsoA2LbXqgyBDLsnwOOLePRL4="},{"Name":"label","Value":"_content/BilliardShop.Web/lib/autozen/images/car-shop-logo-V49ANM.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1718337"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022YKpvFDbb\u002BjGl2dUGcecsoA2LbXqgyBDLsnwOOLePRL4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 19:16:17 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2E6pIn/qbY2qD8YIP4eeOUe/qN6uyyxTGIgIs8r3sDQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"559450"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00222E6pIn/qbY2qD8YIP4eeOUe/qN6uyyxTGIgIs8r3sDQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Oct 2025 20:51:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BilliardShop.Web/lib/autozen/images/nen_billiard.6a10arjwc3.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\images\nen_billiard.jpg'))</AssetFile>

@@ -2064,8 +2064,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>t130d9kijp</Fingerprint>
-      <Integrity>ccAxmBrLKstj0Uuz8VWWagr4UaBSr2JvkZM6jGu9wWo=</Integrity>
+      <Fingerprint>jij7lnyypo</Fingerprint>
+      <Integrity>i++hFOFbuUQQY7N7djqKa5Nasml6mSEYHDv8Bz1v3UE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\css\style.css'))</OriginalItemSpec>
@@ -2316,8 +2316,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>shq23clmgf</Fingerprint>
-      <Integrity>YKpvFDbb+jGl2dUGcecsoA2LbXqgyBDLsnwOOLePRL4=</Integrity>
+      <Fingerprint>gaf7wqmh75</Fingerprint>
+      <Integrity>2E6pIn/qbY2qD8YIP4eeOUe/qN6uyyxTGIgIs8r3sDQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\autozen\images\car-shop-logo-V49ANM.png'))</OriginalItemSpec>

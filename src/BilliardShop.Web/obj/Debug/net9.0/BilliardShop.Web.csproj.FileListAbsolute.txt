@@ -854,7 +854,6 @@ D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compres
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\9fugdok745-7olw56s9fw.gz
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\lxuyb8wiyo-dhc7tcaf9f.gz
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\s6f4sz876f-6hnxm71d5h.gz
-D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\6wp1gxkkdp-t130d9kijp.gz
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\pbte5w3k5b-euiikl6nsc.gz
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\zxr5vwrecy-5wqspjd21q.gz
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\3lmsqgzcgm-gln7toikpu.gz
@@ -1228,3 +1227,4 @@ D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\refint\
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\BilliardShop.Web.pdb
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\BilliardShop.Web.genruntimeconfig.cache
 D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\ref\BilliardShop.Web.dll
+D:\CODE\BILLIARD_SHOP\BilliardShop\src\BilliardShop.Web\obj\Debug\net9.0\compressed\6wp1gxkkdp-jij7lnyypo.gz

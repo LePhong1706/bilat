@@ -8,6 +8,9 @@ public class SanPhamConfiguration : IEntityTypeConfiguration<SanPham>
 {
     public void Configure(EntityTypeBuilder<SanPham> builder)
     {
+        // Table name and trigger configuration
+        builder.ToTable("SanPham", tb => tb.HasTrigger("tr_SanPham_CapNhatNgayChinhSua"));
+
         // Relationships
         builder.HasOne(e => e.DanhMuc)
             .WithMany(e => e.SanPhams)

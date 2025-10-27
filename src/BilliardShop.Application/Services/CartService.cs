@@ -80,7 +80,7 @@ public class CartService : ICartService
 
             await _unitOfWork.GioHangRepository.AddAsync(gioHang);
         }
-        // await _unitOfWork.SaveAsync();
+        await _unitOfWork.SaveChangesAsync();
     }
 
     public async Task UpdateQuantityAsync(int gioHangId, int newQuantity)
@@ -105,6 +105,7 @@ public class CartService : ICartService
 
         gioHang.SoLuong = newQuantity;
         _unitOfWork.GioHangRepository.Update(gioHang);
+        await _unitOfWork.SaveChangesAsync();
     }
 
     public async Task RemoveFromCartAsync(int? nguoiDungId, string? maPhienLamViec, int sanPhamId)
@@ -126,6 +127,7 @@ public class CartService : ICartService
         }
 
         _unitOfWork.GioHangRepository.Remove(cartItem);
+        await _unitOfWork.SaveChangesAsync();
     }
 
     public async Task<int> GetCartItemCountAsync(int? nguoiDungId, string? maPhienLamViec)

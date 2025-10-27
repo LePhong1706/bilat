@@ -129,8 +129,8 @@
             <!-- Add to Cart -->
             @if (Model.IsInStock)
             {
-                <form asp-controller="Cart" asp-action="AddToCart" method="post" class="mb-4">
-                    <input type="hidden" name="productId" value="@Model.Product.Id" />
+                <form id="addToCartForm" class="mb-4">
+                    <input type="hidden" name="productId" value="@Model.Product.Id" id="productId" />
                     <div class="input-group mb-3" style="max-width: 200px;">
                         <button class="btn btn-outline-secondary" type="button" id="decreaseQty">-</button>
                         <input type="number" class="form-control text-center" name="quantity" value="1" min="1" max="@Model.Product.SoLuongTonKho" id="quantity">
@@ -250,6 +250,7 @@
 </div>
 
 @section Scripts {
+    <script src="~/js/site.js"></script>
     <script>
         document.getElementById('increaseQty').addEventListener('click', function() {
             var qty = document.getElementById('quantity');
@@ -266,6 +267,14 @@
             if (current > 1) {
                 qty.value = current - 1;
             }
+        });
+
+        // Handle add to cart form submission
+        document.getElementById('addToCartForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var productId = parseInt(document.getElementById('productId').value);
+            var quantity = parseInt(document.getElementById('quantity').value);
+            addToCart(productId, quantity);
         });
     </script>
 }

@@ -26,22 +26,6 @@ public class ProductService : IProductService
         return products.OrderByDescending(p => p.NgayTao).Take(count);
     }
 
-    public async Task<IEnumerable<SanPham>> GetProductsByCategoryAsync(string categorySlug, int pageNumber = 1, int pageSize = 12)
-    {
-        var result = await _unitOfWork.SanPhamRepository
-            .GetPagedAsync(
-                pageNumber,
-                pageSize,
-                filter: p => p.TrangThaiHoatDong && p.DanhMuc.DuongDanDanhMuc == categorySlug,
-                orderBy: q => q.OrderByDescending(p => p.NgayTao),
-                p => p.HinhAnhs,
-                p => p.DanhMuc,
-                p => p.ThuongHieu
-            );
-
-        return result.Items;
-    }
-
     public async Task<SanPham?> GetProductBySlugAsync(string productSlug)
     {
         var products = await _unitOfWork.SanPhamRepository
@@ -69,27 +53,21 @@ public class ProductService : IProductService
             .FirstOrDefaultAsync(c => c.DuongDanDanhMuc == categorySlug && c.TrangThaiHoatDong);
     }
 
-    public async Task<int> GetTotalProductsInCategoryAsync(string categorySlug)
-    {
-        return await _unitOfWork.SanPhamRepository
-            .CountAsync(p => p.TrangThaiHoatDong && p.DanhMuc.DuongDanDanhMuc == categorySlug);
-    }
-
-    public async Task<IEnumerable<SanPham>> SearchProductsAsync(string searchTerm, string? categorySlug = null, decimal? minPrice = null, decimal? maxPrice = null, int pageNumber = 1, int pageSize = 12)
+    public async Task<IEnumerable<SanPham>> GetProductsAsync(
+        string? searchTerm = null,
+        string? categorySlug = null,
+        decimal? minPrice = null,
+        decimal? maxPrice = null,
+        string? sortBy = null,
+        int pageNumber = 1,
+        int pageSize = 12)
     {
         var result = await _unitOfWork.SanPhamRepository
             .GetPagedAsync(
                 pageNumber,
                 pageSize,
-                filter: p => p.TrangThaiHoatDong
-                    && (string.IsNullOrEmpty(searchTerm)
-                        || p.TenSanPham.Contains(searchTerm)
-                        || (p.MoTaNgan != null && p.MoTaNgan.Contains(searchTerm))
-                        || (p.MoTaChiTiet != null && p.MoTaChiTiet.Contains(searchTerm)))
-                    && (string.IsNullOrEmpty(categorySlug) || p.DanhMuc.DuongDanDanhMuc == categorySlug)
-                    && (!minPrice.HasValue || (p.GiaKhuyenMai.HasValue ? p.GiaKhuyenMai.Value : p.GiaGoc) >= minPrice.Value)
-                    && (!maxPrice.HasValue || (p.GiaKhuyenMai.HasValue ? p.GiaKhuyenMai.Value : p.GiaGoc) <= maxPrice.Value),
-                orderBy: q => q.OrderByDescending(p => p.NgayTao),
+                filter: BuildFilterExpression(searchTerm, categorySlug, minPrice, maxPrice),
+                orderBy: GetSortExpression(sortBy),
                 p => p.HinhAnhs,
                 p => p.DanhMuc,
                 p => p.ThuongHieu
@@ -98,16 +76,43 @@ public class ProductService : IProductService
         return result.Items;
     }
 
-    public async Task<int> GetSearchResultsCountAsync(string searchTerm, string? categorySlug = null, decimal? minPrice = null, decimal? maxPrice = null)
+    public async Task<int> GetProductsCountAsync(
+        string? searchTerm = null,
+        string? categorySlug = null,
+        decimal? minPrice = null,
+        decimal? maxPrice = null)
     {
         return await _unitOfWork.SanPhamRepository
-            .CountAsync(p => p.TrangThaiHoatDong
-                && (string.IsNullOrEmpty(searchTerm)
-                    || p.TenSanPham.Contains(searchTerm)
-                    || (p.MoTaNgan != null && p.MoTaNgan.Contains(searchTerm))
-                    || (p.MoTaChiTiet != null && p.MoTaChiTiet.Contains(searchTerm)))
-                && (string.IsNullOrEmpty(categorySlug) || p.DanhMuc.DuongDanDanhMuc == categorySlug)
-                && (!minPrice.HasValue || (p.GiaKhuyenMai.HasValue ? p.GiaKhuyenMai.Value : p.GiaGoc) >= minPrice.Value)
-                && (!maxPrice.HasValue || (p.GiaKhuyenMai.HasValue ? p.GiaKhuyenMai.Value : p.GiaGoc) <= maxPrice.Value));
+            .CountAsync(BuildFilterExpression(searchTerm, categorySlug, minPrice, maxPrice));
+    }
+
+    private System.Linq.Expressions.Expression<Func<SanPham, bool>> BuildFilterExpression(
+        string? searchTerm,
+        string? categorySlug,
+        decimal? minPrice,
+        decimal? maxPrice)
+    {
+        return p => p.TrangThaiHoatDong
+            && (string.IsNullOrEmpty(searchTerm)
+                || p.TenSanPham.Contains(searchTerm)
+                || (p.MoTaNgan != null && p.MoTaNgan.Contains(searchTerm))
+                || (p.MoTaChiTiet != null && p.MoTaChiTiet.Contains(searchTerm)))
+            && (string.IsNullOrEmpty(categorySlug) || p.DanhMuc.DuongDanDanhMuc == categorySlug)
+            && (!minPrice.HasValue || (p.GiaKhuyenMai.HasValue ? p.GiaKhuyenMai.Value : p.GiaGoc) >= minPrice.Value)
+            && (!maxPrice.HasValue || (p.GiaKhuyenMai.HasValue ? p.GiaKhuyenMai.Value : p.GiaGoc) <= maxPrice.Value);
+    }
+
+    private Func<IQueryable<SanPham>, IOrderedQueryable<SanPham>> GetSortExpression(string? sortBy)
+    {
+        return sortBy switch
+        {
+            "price_asc" => q => q.OrderBy(p => p.GiaKhuyenMai ?? p.GiaGoc),
+            "price_desc" => q => q.OrderByDescending(p => p.GiaKhuyenMai ?? p.GiaGoc),
+            "name_asc" => q => q.OrderBy(p => p.TenSanPham),
+            "name_desc" => q => q.OrderByDescending(p => p.TenSanPham),
+            "newest" => q => q.OrderByDescending(p => p.NgayTao),
+            "oldest" => q => q.OrderBy(p => p.NgayTao),
+            _ => q => q.OrderByDescending(p => p.NgayTao) // Default: newest first
+        };
     }
 }

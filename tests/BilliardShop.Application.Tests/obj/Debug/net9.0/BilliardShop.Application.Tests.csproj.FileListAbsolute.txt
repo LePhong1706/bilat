@@ -1,8 +1,0 @@
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_BilliardShop.Application.Tests
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_BilliardShop.Application.Tests
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/obj/Debug/net9.0/BilliardShop.Application.Tests.csproj.AssemblyReference.cache
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/obj/Debug/net9.0/BilliardShop.Application.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/obj/Debug/net9.0/BilliardShop.Application.Tests.AssemblyInfoInputs.cache
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/obj/Debug/net9.0/BilliardShop.Application.Tests.AssemblyInfo.cs
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/obj/Debug/net9.0/BilliardShop.Application.Tests.csproj.CoreCompileInputs.cache
-/home/luckyboiz/LuckyBoiz/Projects/Asp.net_MVC/BilliardShop/tests/BilliardShop.Application.Tests/obj/Debug/net9.0/BilliardShop.Application.Tests.sourcelink.json

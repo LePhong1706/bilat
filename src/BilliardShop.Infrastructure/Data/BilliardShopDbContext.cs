@@ -163,9 +163,7 @@ public class BilliardShopDbContext : DbContext
         modelBuilder.Entity<BienDongKhoHang>().Ignore(e => e.NguoiTao);
         modelBuilder.Entity<BienDongKhoHang>().Ignore(e => e.NguoiCapNhatCuoi);
 
-        modelBuilder.Entity<DonHang>().Ignore(e => e.NgayCapNhatCuoi);
-        modelBuilder.Entity<DonHang>().Ignore(e => e.NguoiTao);
-        modelBuilder.Entity<DonHang>().Ignore(e => e.NguoiCapNhatCuoi);
+        // DonHang doesn't inherit from AuditableEntity anymore - no need to ignore
 
         modelBuilder.Entity<MaGiamGia>().Ignore(e => e.NgayCapNhatCuoi);
         modelBuilder.Entity<MaGiamGia>().Ignore(e => e.NguoiCapNhatCuoi);

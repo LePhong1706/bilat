@@ -4,7 +4,7 @@ using BilliardShop.Domain.Common;
 
 namespace BilliardShop.Domain.Entities;
 
-public class DonHang : AuditableEntity
+public class DonHang : BaseEntity
 {
     [Required]
     [StringLength(20)]

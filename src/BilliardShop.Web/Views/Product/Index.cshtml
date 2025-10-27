@@ -233,14 +233,21 @@
             <div class="sidebar-block">
                 <h3>Lọc theo giá</h3>
                 <form asp-controller="Product" asp-action="Index" method="get">
-                    <input type="hidden" name="categorySlug" value="@Model.CurrentCategory?.DuongDanDanhMuc" />
+                    @if (!string.IsNullOrEmpty(Model.CurrentCategory?.DuongDanDanhMuc))
+                    {
+                        <input type="hidden" name="categorySlug" value="@Model.CurrentCategory.DuongDanDanhMuc" />
+                    }
+                    @if (!string.IsNullOrEmpty(Model.SearchTerm))
+                    {
+                        <input type="hidden" name="q" value="@Model.SearchTerm" />
+                    }
                     <div style="margin-bottom: 15px;">
                         <label style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px; display: block;">Từ</label>
-                        <input type="number" name="minPrice" placeholder="0 ₫" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;" min="0" step="10000">
+                        <input type="number" name="minPrice" value="@Model.MinPrice" placeholder="0 ₫" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;" min="0" step="10000">
                     </div>
                     <div style="margin-bottom: 15px;">
                         <label style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px; display: block;">Đến</label>
-                        <input type="number" name="maxPrice" placeholder="10,000,000 ₫" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;" min="0" step="10000">
+                        <input type="number" name="maxPrice" value="@Model.MaxPrice" placeholder="10,000,000 ₫" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;" min="0" step="10000">
                     </div>
                     <button type="submit" class="btn-search" style="width: 100%;">
                         <i class="fa fa-filter"></i> Lọc giá
@@ -251,12 +258,31 @@
 
         @* Main Content *@
         <div class="collection-main wow fadeInRight">
-            @* Search Toolbar *@
+            @* Search & Sort Toolbar *@
             <div class="collection-toolbar">
-                <form asp-controller="Product" asp-action="Search" method="get">
+                <form asp-controller="Product" asp-action="Index" method="get">
+                    @if (!string.IsNullOrEmpty(Model.CurrentCategory?.DuongDanDanhMuc))
+                    {
+                        <input type="hidden" name="categorySlug" value="@Model.CurrentCategory.DuongDanDanhMuc" />
+                    }
+                    @if (Model.MinPrice.HasValue)
+                    {
+                        <input type="hidden" name="minPrice" value="@Model.MinPrice" />
+                    }
+                    @if (Model.MaxPrice.HasValue)
+                    {
+                        <input type="hidden" name="maxPrice" value="@Model.MaxPrice" />
+                    }
                     <div class="filter-row">
                         <input type="text" name="q" value="@Model.SearchTerm" placeholder="Tìm kiếm sản phẩm..." />
-                        <input type="hidden" name="categorySlug" value="@Model.CurrentCategory?.DuongDanDanhMuc" />
+                        <select name="sortBy" style="padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px;">
+                            <option value="">Sắp xếp mặc định</option>
+                            <option value="newest" selected="@(Model.SortBy == "newest")">Mới nhất</option>
+                            <option value="price_asc" selected="@(Model.SortBy == "price_asc")">Giá: Thấp đến Cao</option>
+                            <option value="price_desc" selected="@(Model.SortBy == "price_desc")">Giá: Cao đến Thấp</option>
+                            <option value="name_asc" selected="@(Model.SortBy == "name_asc")">Tên: A-Z</option>
+                            <option value="name_desc" selected="@(Model.SortBy == "name_desc")">Tên: Z-A</option>
+                        </select>
                     </div>
                     <div style="display: flex; gap: 10px;">
                         <button type="submit" class="btn-search">
@@ -269,10 +295,29 @@
                 </form>
             </div>
 
-            @if (!string.IsNullOrEmpty(Model.SearchTerm))
+            @* Active Filters Display *@
+            @if (Model.HasActiveFilters)
             {
                 <div style="background: #e8f5e9; padding: 15px; border-radius: 8px; margin-bottom: 25px; color: #2e7d32;">
-                    <i class="fa fa-info-circle"></i> Kết quả tìm kiếm cho: <strong>@Model.SearchTerm</strong>
+                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                        <strong><i class="fa fa-filter"></i> Bộ lọc đang áp dụng:</strong>
+                        @if (!string.IsNullOrEmpty(Model.SearchTerm))
+                        {
+                            <span style="background: white; padding: 5px 10px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
+                                Tìm kiếm: <strong>@Model.SearchTerm</strong>
+                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, minPrice = Model.MinPrice, maxPrice = Model.MaxPrice })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold;">×</a>
+                            </span>
+                        }
+                        @if (Model.MinPrice.HasValue || Model.MaxPrice.HasValue)
+                        {
+                            <span style="background: white; padding: 5px 10px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
+                                Giá: <strong>@(Model.MinPrice?.ToString("N0") ?? "0") ₫ - @(Model.MaxPrice?.ToString("N0") ?? "∞") ₫</strong>
+                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, q = Model.SearchTerm })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold;">×</a>
+                            </span>
+                        }
+                    </div>
                 </div>
             }
 
@@ -330,7 +375,7 @@
 
                             @if (product.SoLuongTonKho > 0)
                             {
-                                <button class="btn-add-to-cart" onclick="addToCart(@product.Id)">
+                                <button class="btn-add-to-cart" onclick="addToCart(@product.Id, 1)">
                                     <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
                                 </button>
                             }
@@ -353,7 +398,14 @@
                         @if (Model.CurrentPage > 1)
                         {
                             <li>
-                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, page = Model.CurrentPage - 1 })">
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    sortBy = Model.SortBy,
+                                    page = Model.CurrentPage - 1
+                                })">
                                     <i class="fa fa-angle-left"></i> Trước
                                 </a>
                             </li>
@@ -362,7 +414,14 @@
                         @for (int i = 1; i <= Model.TotalPages; i++)
                         {
                             <li class="@(i == Model.CurrentPage ? "active" : "")">
-                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, page = i })">
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    sortBy = Model.SortBy,
+                                    page = i
+                                })">
                                     @i
                                 </a>
                             </li>
@@ -371,7 +430,14 @@
                         @if (Model.CurrentPage < Model.TotalPages)
                         {
                             <li>
-                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, page = Model.CurrentPage + 1 })">
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    sortBy = Model.SortBy,
+                                    page = Model.CurrentPage + 1
+                                })">
                                     Sau <i class="fa fa-angle-right"></i>
                                 </a>
                             </li>
@@ -479,10 +545,5 @@
         }
     </style>
 
-    <script>
-        function addToCart(productId) {
-            console.log('Adding product to cart:', productId);
-            alert('Sản phẩm đã được thêm vào giỏ hàng!');
-        }
-    </script>
+    <script src="~/js/site.js"></script>
 }

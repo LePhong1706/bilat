@@ -15,32 +15,51 @@ public class ProductController : Controller
         _logger = logger;
     }
 
-    public async Task<IActionResult> Index(string? categorySlug, int page = 1)
+    public async Task<IActionResult> Index(
+        string? categorySlug,
+        string? q,
+        decimal? minPrice,
+        decimal? maxPrice,
+        string? sortBy,
+        int page = 1)
     {
-        if (string.IsNullOrEmpty(categorySlug))
-        {
-            // Show all products or redirect to a default category
-            categorySlug = "all";
-        }
-
         var viewModel = new ProductListViewModel
         {
             CurrentPage = page,
-            PageSize = 12
+            PageSize = 12,
+            SearchTerm = q,
+            MinPrice = minPrice,
+            MaxPrice = maxPrice,
+            SortBy = sortBy
         };
 
         // Get category info if specified
-        if (categorySlug != "all")
+        if (!string.IsNullOrEmpty(categorySlug))
         {
             viewModel.CurrentCategory = await _productService.GetCategoryBySlugAsync(categorySlug);
             if (viewModel.CurrentCategory == null)
             {
                 return NotFound();
             }
-
-            viewModel.Products = await _productService.GetProductsByCategoryAsync(categorySlug, page, viewModel.PageSize);
-            viewModel.TotalProducts = await _productService.GetTotalProductsInCategoryAsync(categorySlug);
         }
+
+        // Get products with all filters applied
+        viewModel.Products = await _productService.GetProductsAsync(
+            searchTerm: q,
+            categorySlug: categorySlug,
+            minPrice: minPrice,
+            maxPrice: maxPrice,
+            sortBy: sortBy,
+            pageNumber: page,
+            pageSize: viewModel.PageSize
+        );
+
+        viewModel.TotalProducts = await _productService.GetProductsCountAsync(
+            searchTerm: q,
+            categorySlug: categorySlug,
+            minPrice: minPrice,
+            maxPrice: maxPrice
+        );
 
         viewModel.AllCategories = await _productService.GetAllCategoriesAsync();
 
@@ -63,10 +82,10 @@ public class ProductController : Controller
         var viewModel = new ProductDetailViewModel
         {
             Product = product,
-            RelatedProducts = await _productService.GetProductsByCategoryAsync(
-                product.DanhMuc.DuongDanDanhMuc,
-                1,
-                4
+            RelatedProducts = await _productService.GetProductsAsync(
+                categorySlug: product.DanhMuc.DuongDanDanhMuc,
+                pageNumber: 1,
+                pageSize: 4
             )
         };
 
@@ -76,26 +95,5 @@ public class ProductController : Controller
             .Take(3);
 
         return View(viewModel);
-    }
-
-    public async Task<IActionResult> Search(string q, string? categorySlug, decimal? minPrice, decimal? maxPrice, int page = 1)
-    {
-        var viewModel = new ProductListViewModel
-        {
-            CurrentPage = page,
-            PageSize = 12,
-            SearchTerm = q
-        };
-
-        viewModel.Products = await _productService.SearchProductsAsync(q, categorySlug, minPrice, maxPrice, page, viewModel.PageSize);
-        viewModel.TotalProducts = await _productService.GetSearchResultsCountAsync(q, categorySlug, minPrice, maxPrice);
-        viewModel.AllCategories = await _productService.GetAllCategoriesAsync();
-
-        if (!string.IsNullOrEmpty(categorySlug))
-        {
-            viewModel.CurrentCategory = await _productService.GetCategoryBySlugAsync(categorySlug);
-        }
-
-        return View("Index", viewModel);
     }
 }

@@ -8,6 +8,13 @@ public class DonHangConfiguration : IEntityTypeConfiguration<DonHang>
 {
     public void Configure(EntityTypeBuilder<DonHang> builder)
     {
+        // Table name and trigger configuration
+        builder.ToTable("DonHang", tb => tb.HasTrigger("tr_DonHang_NhatKyHeThong"));
+
+        // Map Id to MaDonHang column
+        builder.HasKey(e => e.Id);
+        builder.Property(e => e.Id).HasColumnName("MaDonHang");
+
         // Relationships
         builder.HasOne(e => e.NguoiDung)
             .WithMany(e => e.DonHangs)

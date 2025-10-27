@@ -81,7 +81,7 @@ public class OrderService : IOrderService
 
     public async Task<DonHang?> GetOrderByIdAsync(int orderId)
     {
-        return await _unitOfWork.DonHangRepository.GetByIdAsync(orderId);
+        return await _unitOfWork.DonHangRepository.GetOrderWithDetailsAsync(orderId);
     }
 
     public async Task<IEnumerable<DonHang>> GetOrdersByUserAsync(int nguoiDungId)

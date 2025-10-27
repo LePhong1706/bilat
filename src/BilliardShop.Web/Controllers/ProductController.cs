@@ -20,9 +20,20 @@ public class ProductController : Controller
         string? q,
         decimal? minPrice,
         decimal? maxPrice,
+        List<string>? brands,
+        List<string>? colors,
+        List<string>? materials,
+        bool? inStock,
+        bool? featured,
+        bool? onSale,
         string? sortBy,
         int page = 1)
     {
+        // Initialize filter lists if null
+        brands ??= new List<string>();
+        colors ??= new List<string>();
+        materials ??= new List<string>();
+
         var viewModel = new ProductListViewModel
         {
             CurrentPage = page,
@@ -30,6 +41,12 @@ public class ProductController : Controller
             SearchTerm = q,
             MinPrice = minPrice,
             MaxPrice = maxPrice,
+            SelectedBrandSlugs = brands,
+            SelectedColors = colors,
+            SelectedMaterials = materials,
+            InStockOnly = inStock,
+            FeaturedOnly = featured,
+            OnSaleOnly = onSale,
             SortBy = sortBy
         };
 
@@ -49,6 +66,12 @@ public class ProductController : Controller
             categorySlug: categorySlug,
             minPrice: minPrice,
             maxPrice: maxPrice,
+            brandSlugs: brands,
+            colors: colors,
+            materials: materials,
+            inStock: inStock,
+            isFeatured: featured,
+            isOnSale: onSale,
             sortBy: sortBy,
             pageNumber: page,
             pageSize: viewModel.PageSize
@@ -58,10 +81,20 @@ public class ProductController : Controller
             searchTerm: q,
             categorySlug: categorySlug,
             minPrice: minPrice,
-            maxPrice: maxPrice
+            maxPrice: maxPrice,
+            brandSlugs: brands,
+            colors: colors,
+            materials: materials,
+            inStock: inStock,
+            isFeatured: featured,
+            isOnSale: onSale
         );
 
+        // Load all filter options
         viewModel.AllCategories = await _productService.GetAllCategoriesAsync();
+        viewModel.AvailableBrands = await _productService.GetAllBrandsAsync();
+        viewModel.AvailableColors = await _productService.GetAllColorsAsync();
+        viewModel.AvailableMaterials = await _productService.GetAllMaterialsAsync();
 
         return View(viewModel);
     }

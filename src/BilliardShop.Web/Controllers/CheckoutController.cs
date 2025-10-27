@@ -1,6 +1,8 @@
 using BilliardShop.Application.Interfaces;
+using BilliardShop.Application.Interfaces.Services;
 using BilliardShop.Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace BilliardShop.Web.Controllers;
 
@@ -9,12 +11,28 @@ public class CheckoutController : Controller
     private readonly ICartService _cartService;
     private readonly IProductService _productService;
     private readonly IOrderService _orderService;
+    private readonly INguoiDungService _nguoiDungService;
 
-    public CheckoutController(ICartService cartService, IProductService productService, IOrderService orderService)
+    public CheckoutController(
+        ICartService cartService,
+        IProductService productService,
+        IOrderService orderService,
+        INguoiDungService nguoiDungService)
     {
         _cartService = cartService;
         _productService = productService;
         _orderService = orderService;
+        _nguoiDungService = nguoiDungService;
+    }
+
+    private int? GetCurrentUserId()
+    {
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+        if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
+        {
+            return userId;
+        }
+        return null;
     }
 
     private string GetSessionId()
@@ -31,8 +49,9 @@ public class CheckoutController : Controller
     [HttpGet]
     public async Task<IActionResult> Index()
     {
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
-        var cartItems = await _cartService.GetCartItemsAsync(null, sessionId);
+        var cartItems = await _cartService.GetCartItemsAsync(userId, sessionId);
 
         if (!cartItems.Any())
         {
@@ -41,6 +60,17 @@ public class CheckoutController : Controller
         }
 
         var viewModel = new CheckoutViewModel();
+
+        // Nếu user đã đăng nhập, điền sẵn thông tin
+        if (userId.HasValue)
+        {
+            var user = await _nguoiDungService.GetUserWithDetailsAsync(userId.Value);
+            if (user != null)
+            {
+                viewModel.TenNguoiNhan = $"{user.Ho} {user.Ten}".Trim();
+                viewModel.SoDienThoai = user.SoDienThoai ?? string.Empty;
+            }
+        }
 
         foreach (var item in cartItems)
         {
@@ -79,9 +109,11 @@ public class CheckoutController : Controller
             return RedirectToAction("Index");
         }
 
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
+
         var order = await _orderService.CreateOrderAsync(
-            null,
+            userId,
             sessionId,
             model.TenNguoiNhan,
             model.SoDienThoai,
@@ -95,6 +127,7 @@ public class CheckoutController : Controller
             return RedirectToAction("Index");
         }
 
+        TempData["SuccessMessage"] = "Đặt hàng thành công! Cảm ơn bạn đã mua hàng.";
         return RedirectToAction("Confirmation", new { orderId = order.Id });
     }
 

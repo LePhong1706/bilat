@@ -83,14 +83,25 @@ public class CartService : ICartService
         await _unitOfWork.SaveChangesAsync();
     }
 
-    public async Task UpdateQuantityAsync(int gioHangId, int newQuantity)
+    public async Task UpdateQuantityAsync(int? nguoiDungId, string? maPhienLamViec, int gioHangId, int newQuantity)
     {
         if (newQuantity <= 0)
         {
             return;
         }
 
-        var gioHang = await _unitOfWork.GioHangRepository.GetByIdAsync(gioHangId);
+        GioHang? gioHang = null;
+        if (nguoiDungId.HasValue)
+        {
+            gioHang = await _unitOfWork.GioHangRepository.GetByIdAsync(gioHangId);
+            if (gioHang?.MaNguoiDung != nguoiDungId.Value) return;
+        }
+        else if (!string.IsNullOrEmpty(maPhienLamViec))
+        {
+            gioHang = await _unitOfWork.GioHangRepository.GetByIdAsync(gioHangId);
+            if (gioHang?.MaPhienLamViec != maPhienLamViec) return;
+        }
+
         if (gioHang == null)
         {
             return;

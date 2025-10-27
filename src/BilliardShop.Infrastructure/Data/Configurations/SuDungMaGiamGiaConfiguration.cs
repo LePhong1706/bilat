@@ -8,6 +8,12 @@ public class SuDungMaGiamGiaConfiguration : IEntityTypeConfiguration<SuDungMaGia
 {
     public void Configure(EntityTypeBuilder<SuDungMaGiamGia> builder)
     {
+        // Ignore properties from AuditableEntity that don't exist in database
+        builder.Ignore(e => e.NgayTao);
+        builder.Ignore(e => e.NgayCapNhatCuoi);
+        builder.Ignore(e => e.NguoiTao);
+        builder.Ignore(e => e.NguoiCapNhatCuoi);
+
         builder.HasOne(e => e.MaGiamGia)
             .WithMany(e => e.SuDungMaGiamGias)
             .HasForeignKey(e => e.MaMaGiamGia)

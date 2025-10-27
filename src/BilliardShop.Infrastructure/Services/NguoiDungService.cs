@@ -181,6 +181,30 @@ public class NguoiDungService : BaseService<NguoiDung, NguoiDungDto>, INguoiDung
         return !await _unitOfWork.NguoiDungRepository.IsUsernameExistsAsync(tenDangNhap, excludeUserId, cancellationToken);
     }
 
+    public async Task<ServiceResult<NguoiDungDto>> ValidateLoginAsync(string usernameOrEmail, string password, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var user = await _unitOfWork.NguoiDungRepository.GetByEmailOrUsernameAsync(usernameOrEmail, cancellationToken);
+
+            if (user == null)
+                return ServiceResult<NguoiDungDto>.Failure("Tên đăng nhập hoặc mật khẩu không đúng");
+
+            if (!user.TrangThaiHoatDong)
+                return ServiceResult<NguoiDungDto>.Failure("Tài khoản đã bị khóa");
+
+            if (!VerifyPassword(password, user.MatKhauMaHoa, user.MuoiMatKhau))
+                return ServiceResult<NguoiDungDto>.Failure("Tên đăng nhập hoặc mật khẩu không đúng");
+
+            var userDto = _mapper.Map<NguoiDungDto>(user);
+            return ServiceResult<NguoiDungDto>.Success(userDto);
+        }
+        catch (Exception ex)
+        {
+            return ServiceResult<NguoiDungDto>.Failure($"Lỗi khi đăng nhập: {ex.Message}");
+        }
+    }
+
     private static (string hashedPassword, string salt) HashPassword(string password)
     {
         using var rng = RandomNumberGenerator.Create();
@@ -193,5 +217,15 @@ public class NguoiDungService : BaseService<NguoiDung, NguoiDungDto>, INguoiDung
         var hashedPassword = Convert.ToBase64String(hash);
 
         return (hashedPassword, salt);
+    }
+
+    private static bool VerifyPassword(string password, string hashedPassword, string salt)
+    {
+        var saltBytes = Convert.FromBase64String(salt);
+        using var pbkdf2 = new Rfc2898DeriveBytes(password, saltBytes, 10000, HashAlgorithmName.SHA256);
+        var hash = pbkdf2.GetBytes(32);
+        var computedHash = Convert.ToBase64String(hash);
+
+        return computedHash == hashedPassword;
     }
 }

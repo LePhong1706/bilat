@@ -20,4 +20,5 @@ public interface INguoiDungService : IBaseService<NguoiDungDto>
     Task<IEnumerable<NguoiDungDto>> GetRecentActiveUsersAsync(int days = 30, int take = 100, CancellationToken cancellationToken = default);
     Task<bool> IsEmailAvailableAsync(string email, int? excludeUserId = null, CancellationToken cancellationToken = default);
     Task<bool> IsUsernameAvailableAsync(string tenDangNhap, int? excludeUserId = null, CancellationToken cancellationToken = default);
+    Task<ServiceResult<NguoiDungDto>> ValidateLoginAsync(string usernameOrEmail, string password, CancellationToken cancellationToken = default);
 }

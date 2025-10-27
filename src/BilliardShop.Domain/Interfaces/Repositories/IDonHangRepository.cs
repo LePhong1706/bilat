@@ -6,6 +6,7 @@ public interface IDonHangRepository : IGenericRepository<DonHang>
 {
     Task<DonHang?> GetByOrderNumberAsync(string soDonHang, CancellationToken cancellationToken = default);
     Task<DonHang?> GetOrderWithDetailsAsync(int donHangId, CancellationToken cancellationToken = default);
+
     Task<IEnumerable<DonHang>> GetByUserIdAsync(int nguoiDungId, CancellationToken cancellationToken = default);
     Task<IEnumerable<DonHang>> GetByStatusAsync(int trangThaiId, CancellationToken cancellationToken = default);
     Task<IEnumerable<DonHang>> GetByDateRangeAsync(DateTime fromDate, DateTime toDate, CancellationToken cancellationToken = default);

@@ -2,6 +2,7 @@ using BilliardShop.Application.Interfaces;
 using BilliardShop.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using BilliardShop.Web.Controllers;
+using System.Security.Claims;
 
 namespace BilliardShop.Web.Controllers;
 
@@ -14,6 +15,16 @@ public class CartController : Controller
     {
         _cartService = cartService;
         _productService = productService;
+    }
+
+    private int? GetCurrentUserId()
+    {
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+        if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
+        {
+            return userId;
+        }
+        return null;
     }
 
     private string GetSessionId()
@@ -29,9 +40,9 @@ public class CartController : Controller
 
     public async Task<IActionResult> Index()
     {
-        // Tạm thời dùng session cho guest user
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
-        var cartItems = await _cartService.GetCartItemsAsync(null, sessionId);
+        var cartItems = await _cartService.GetCartItemsAsync(userId, sessionId);
 
         var viewModel = new CartViewModel();
 
@@ -66,12 +77,13 @@ public class CartController : Controller
     [HttpPost]
     public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
     {
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
         try
         {
-            await _cartService.AddToCartAsync(null, sessionId, productId, quantity);
+            await _cartService.AddToCartAsync(userId, sessionId, productId, quantity);
 
-            var cartItems = await _cartService.GetCartItemsAsync(null, sessionId);
+            var cartItems = await _cartService.GetCartItemsAsync(userId, sessionId);
             var viewModel = new CartViewModel();
 
             foreach (var item in cartItems)
@@ -122,10 +134,11 @@ public class CartController : Controller
 
         try
         {
-            await _cartService.UpdateQuantityAsync(cartItemId, quantity);
-
+            var userId = GetCurrentUserId();
             var sessionId = GetSessionId();
-            var total = await _cartService.GetCartTotalAsync(null, sessionId);
+            await _cartService.UpdateQuantityAsync(userId, sessionId, cartItemId, quantity);
+
+            var total = await _cartService.GetCartTotalAsync(userId, sessionId);
             return Json(new { success = true, total });
         }
         catch (Exception)
@@ -137,10 +150,11 @@ public class CartController : Controller
     [HttpPost]
     public async Task<IActionResult> RemoveFromCart(int productId)
     {
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
         try
         {
-            await _cartService.RemoveFromCartAsync(null, sessionId, productId);
+            await _cartService.RemoveFromCartAsync(userId, sessionId, productId);
             TempData["Success"] = "Đã xóa sản phẩm khỏi giỏ hàng";
         }
         catch (Exception)
@@ -154,16 +168,18 @@ public class CartController : Controller
     [HttpPost]
     public async Task<IActionResult> ClearCart()
     {
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
-        await _cartService.ClearCartAsync(null, sessionId);
+        await _cartService.ClearCartAsync(userId, sessionId);
         TempData["Success"] = "Đã xóa toàn bộ giỏ hàng";
         return RedirectToAction("Index");
     }
 
     public async Task<IActionResult> GetCartCount()
     {
+        var userId = GetCurrentUserId();
         var sessionId = GetSessionId();
-        var count = await _cartService.GetCartItemCountAsync(null, sessionId);
+        var count = await _cartService.GetCartItemCountAsync(userId, sessionId);
         return Json(new { count });
     }
 }

@@ -628,9 +628,6 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<DateTime?>("NgayNhanHang")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("NgayTao")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime?>("NgayYeuCauGiao")
                         .HasColumnType("datetime2");
 

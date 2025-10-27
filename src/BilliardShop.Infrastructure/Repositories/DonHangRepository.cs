@@ -39,6 +39,8 @@ public class DonHangRepository : GenericRepository<DonHang>, IDonHangRepository
             .Include(x => x.TrangThai)
             .Include(x => x.PhuongThucThanhToan)
             .Include(x => x.PhuongThucVanChuyen)
+            .Include(x => x.ChiTietDonHangs)
+                .ThenInclude(ct => ct.SanPham)
             .Where(x => x.MaNguoiDung == nguoiDungId)
             .OrderByDescending(x => x.NgayDatHang)
             .ToListAsync(cancellationToken);

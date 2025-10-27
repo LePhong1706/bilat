@@ -31,9 +31,13 @@
             padding: 20px 0;
         }
         .breadcrumb-custom a {
-            color: #7f8c8d;
+            color: #DF3B34;
             text-decoration: none;
         }
+        .sidebar-block label {
+            color: #333;
+        }
+
         .breadcrumb-custom a:hover {
             color: #e74c3c;
         }
@@ -230,27 +234,140 @@
                 </ul>
             </div>
 
+            @* Multi-Filter Form *@
             <div class="sidebar-block">
-                <h3>Lọc theo giá</h3>
-                <form asp-controller="Product" asp-action="Index" method="get">
+                <h3><i class="fa fa-filter"></i> Bộ lọc sản phẩm</h3>
+                <form asp-controller="Product" asp-action="Index" method="get" id="filterForm">
+                    @* Preserve category *@
                     @if (!string.IsNullOrEmpty(Model.CurrentCategory?.DuongDanDanhMuc))
                     {
                         <input type="hidden" name="categorySlug" value="@Model.CurrentCategory.DuongDanDanhMuc" />
                     }
+                    @* Preserve search term *@
                     @if (!string.IsNullOrEmpty(Model.SearchTerm))
                     {
                         <input type="hidden" name="q" value="@Model.SearchTerm" />
                     }
-                    <div style="margin-bottom: 15px;">
-                        <label style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px; display: block;">Từ</label>
-                        <input type="number" name="minPrice" value="@Model.MinPrice" placeholder="0 ₫" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;" min="0" step="10000">
+                    @* Preserve sort *@
+                    @if (!string.IsNullOrEmpty(Model.SortBy))
+                    {
+                        <input type="hidden" name="sortBy" value="@Model.SortBy" />
+                    }
+
+                    @* Price Range Filter *@
+                    <div style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                        <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #2c3e50;">
+                            <i class="fa fa-tag"></i> Khoảng giá
+                        </h4>
+                        <div style="margin-bottom: 10px;">
+                            <input type="number" name="minPrice" value="@Model.MinPrice" placeholder="Từ 0 ₫"
+                                   style="width: 100%; padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;"
+                                   min="0" step="10000">
+                        </div>
+                        <div>
+                            <input type="number" name="maxPrice" value="@Model.MaxPrice" placeholder="Đến ∞ ₫"
+                                   style="width: 100%; padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;"
+                                   min="0" step="10000">
+                        </div>
                     </div>
-                    <div style="margin-bottom: 15px;">
-                        <label style="font-size: 14px; color: #7f8c8d; margin-bottom: 5px; display: block;">Đến</label>
-                        <input type="number" name="maxPrice" value="@Model.MaxPrice" placeholder="10,000,000 ₫" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;" min="0" step="10000">
+
+                    @* Brand Filter *@
+                    @if (Model.AvailableBrands.Any())
+                    {
+                        <div style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                            <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #2c3e50;">
+                                <i class="fa fa-bookmark"></i> Thương hiệu
+                            </h4>
+                            <div style="max-height: 200px; overflow-y: auto;">
+                                @foreach (var brand in Model.AvailableBrands)
+                                {
+                                    <label style="display: flex; align-items: center; padding: 6px 0; cursor: pointer; font-size: 14px;">
+                                        <input type="checkbox" name="brands" value="@brand.DuongDanThuongHieu"
+                                               @(Model.SelectedBrandSlugs.Contains(brand.DuongDanThuongHieu) ? "checked" : "")
+                                               style="margin-right: 8px; cursor: pointer;">
+                                        <span>@brand.TenThuongHieu</span>
+                                    </label>
+                                }
+                            </div>
+                        </div>
+                    }
+
+                    @* Color Filter *@
+                    @if (Model.AvailableColors.Any())
+                    {
+                        <div style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                            <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #2c3e50;">
+                                <i class="fa fa-paint-brush"></i> Màu sắc
+                            </h4>
+                            <div style="max-height: 150px; overflow-y: auto;">
+                                @foreach (var color in Model.AvailableColors)
+                                {
+                                    <label style="display: flex; align-items: center; padding: 6px 0; cursor: pointer; font-size: 14px;">
+                                        <input type="checkbox" name="colors" value="@color"
+                                               @(Model.SelectedColors.Contains(color) ? "checked" : "")
+                                               style="margin-right: 8px; cursor: pointer;">
+                                        <span>@color</span>
+                                    </label>
+                                }
+                            </div>
+                        </div>
+                    }
+
+                    @* Material Filter *@
+                    @if (Model.AvailableMaterials.Any())
+                    {
+                        <div style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                            <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #2c3e50;">
+                                <i class="fa fa-cube"></i> Chất liệu
+                            </h4>
+                            <div style="max-height: 150px; overflow-y: auto;">
+                                @foreach (var material in Model.AvailableMaterials)
+                                {
+                                    <label style="display: flex; align-items: center; padding: 6px 0; cursor: pointer; font-size: 14px;">
+                                        <input type="checkbox" name="materials" value="@material"
+                                               @(Model.SelectedMaterials.Contains(material) ? "checked" : "")
+                                               style="margin-right: 8px; cursor: pointer;">
+                                        <span>@material</span>
+                                    </label>
+                                }
+                            </div>
+                        </div>
+                    }
+
+                    @* Special Filters *@
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #2c3e50;">
+                            <i class="fa fa-star"></i> Đặc biệt
+                        </h4>
+                        <label style="display: flex; align-items: center; padding: 8px 0; cursor: pointer; font-size: 14px;">
+                            <input type="checkbox" name="inStock" value="true"
+                                   @(Model.InStockOnly == true ? "checked" : "")
+                                   style="margin-right: 8px; cursor: pointer;">
+                            <span><i class="fa fa-check-circle" style="color: #27ae60;"></i> Còn hàng</span>
+                        </label>
+                        <label style="display: flex; align-items: center; padding: 8px 0; cursor: pointer; font-size: 14px;">
+                            <input type="checkbox" name="featured" value="true"
+                                   @(Model.FeaturedOnly == true ? "checked" : "")
+                                   style="margin-right: 8px; cursor: pointer;">
+                            <span><i class="fa fa-star" style="color: #f39c12;"></i> Sản phẩm nổi bật</span>
+                        </label>
+                        <label style="display: flex; align-items: center; padding: 8px 0; cursor: pointer; font-size: 14px;">
+                            <input type="checkbox" name="onSale" value="true"
+                                   @(Model.OnSaleOnly == true ? "checked" : "")
+                                   style="margin-right: 8px; cursor: pointer;">
+                            <span><i class="fa fa-percent" style="color: #e74c3c;"></i> Đang khuyến mãi</span>
+                        </label>
                     </div>
-                    <button type="submit" class="btn-search" style="width: 100%;">
-                        <i class="fa fa-filter"></i> Lọc giá
+
+                    @* Apply Filters Button *@
+                    <button type="submit" class="btn-search" style="width: 100%; padding: 12px; font-size: 15px; font-weight: 600;">
+                        <i class="fa fa-check"></i> Áp dụng bộ lọc
+                        @if (Model.ActiveFiltersCount > 0)
+                        {
+                            <span style="background: white; color: #e74c3c; padding: 2px 8px; border-radius: 10px; margin-left: 5px; font-size: 12px;">
+                                @Model.ActiveFiltersCount
+                            </span>
+                        }
                     </button>
                 </form>
             </div>
@@ -261,9 +378,22 @@
             @* Search & Sort Toolbar *@
             <div class="collection-toolbar">
                 <form asp-controller="Product" asp-action="Index" method="get">
+                    @* Preserve all filters *@
                     @if (!string.IsNullOrEmpty(Model.CurrentCategory?.DuongDanDanhMuc))
                     {
                         <input type="hidden" name="categorySlug" value="@Model.CurrentCategory.DuongDanDanhMuc" />
+                    }
+                    @foreach (var brand in Model.SelectedBrandSlugs)
+                    {
+                        <input type="hidden" name="brands" value="@brand" />
+                    }
+                    @foreach (var color in Model.SelectedColors)
+                    {
+                        <input type="hidden" name="colors" value="@color" />
+                    }
+                    @foreach (var material in Model.SelectedMaterials)
+                    {
+                        <input type="hidden" name="materials" value="@material" />
                     }
                     @if (Model.MinPrice.HasValue)
                     {
@@ -273,6 +403,19 @@
                     {
                         <input type="hidden" name="maxPrice" value="@Model.MaxPrice" />
                     }
+                    @if (Model.InStockOnly == true)
+                    {
+                        <input type="hidden" name="inStock" value="true" />
+                    }
+                    @if (Model.FeaturedOnly == true)
+                    {
+                        <input type="hidden" name="featured" value="true" />
+                    }
+                    @if (Model.OnSaleOnly == true)
+                    {
+                        <input type="hidden" name="onSale" value="true" />
+                    }
+
                     <div class="filter-row">
                         <input type="text" name="q" value="@Model.SearchTerm" placeholder="Tìm kiếm sản phẩm..." />
                         <select name="sortBy" style="padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px;">
@@ -289,32 +432,174 @@
                             <i class="fa fa-search"></i> Tìm kiếm
                         </button>
                         <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc })" class="btn-reset">
-                            <i class="fa fa-refresh"></i> Đặt lại
+                            <i class="fa fa-refresh"></i> Xóa tất cả bộ lọc
                         </a>
                     </div>
                 </form>
             </div>
 
-            @* Active Filters Display *@
+            @* Active Filters Display - Enhanced *@
             @if (Model.HasActiveFilters)
             {
-                <div style="background: #e8f5e9; padding: 15px; border-radius: 8px; margin-bottom: 25px; color: #2e7d32;">
-                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                        <strong><i class="fa fa-filter"></i> Bộ lọc đang áp dụng:</strong>
+                <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; margin-bottom: 25px; color: #2e7d32;">
+                    <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px;">
+                        <strong style="font-size: 16px;">
+                            <i class="fa fa-filter"></i> Bộ lọc đang áp dụng (@Model.ActiveFiltersCount)
+                        </strong>
+                        <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc })"
+                           style="color: #e74c3c; text-decoration: none; font-weight: 600; font-size: 14px;">
+                            <i class="fa fa-times-circle"></i> Xóa tất cả
+                        </a>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                         @if (!string.IsNullOrEmpty(Model.SearchTerm))
                         {
-                            <span style="background: white; padding: 5px 10px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
-                                Tìm kiếm: <strong>@Model.SearchTerm</strong>
-                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, minPrice = Model.MinPrice, maxPrice = Model.MaxPrice })"
-                                   style="color: #e74c3c; text-decoration: none; font-weight: bold;">×</a>
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-search"></i> <strong>@Model.SearchTerm</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors,
+                                    materials = Model.SelectedMaterials,
+                                    inStock = Model.InStockOnly,
+                                    featured = Model.FeaturedOnly,
+                                    onSale = Model.OnSaleOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
                             </span>
                         }
                         @if (Model.MinPrice.HasValue || Model.MaxPrice.HasValue)
                         {
-                            <span style="background: white; padding: 5px 10px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
-                                Giá: <strong>@(Model.MinPrice?.ToString("N0") ?? "0") ₫ - @(Model.MaxPrice?.ToString("N0") ?? "∞") ₫</strong>
-                                <a href="@Url.Action("Index", "Product", new { categorySlug = Model.CurrentCategory?.DuongDanDanhMuc, q = Model.SearchTerm })"
-                                   style="color: #e74c3c; text-decoration: none; font-weight: bold;">×</a>
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-tag"></i> <strong>@(Model.MinPrice?.ToString("N0") ?? "0") ₫ - @(Model.MaxPrice?.ToString("N0") ?? "∞") ₫</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors,
+                                    materials = Model.SelectedMaterials,
+                                    inStock = Model.InStockOnly,
+                                    featured = Model.FeaturedOnly,
+                                    onSale = Model.OnSaleOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
+                            </span>
+                        }
+                        @foreach (var brandSlug in Model.SelectedBrandSlugs)
+                        {
+                            var brand = Model.AvailableBrands.FirstOrDefault(b => b.DuongDanThuongHieu == brandSlug);
+                            if (brand != null)
+                            {
+                                <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                    <i class="fa fa-bookmark"></i> <strong>@brand.TenThuongHieu</strong>
+                                    <a href="@Url.Action("Index", "Product", new {
+                                        categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                        q = Model.SearchTerm,
+                                        minPrice = Model.MinPrice,
+                                        maxPrice = Model.MaxPrice,
+                                        brands = Model.SelectedBrandSlugs.Where(b => b != brandSlug).ToList(),
+                                        colors = Model.SelectedColors,
+                                        materials = Model.SelectedMaterials,
+                                        inStock = Model.InStockOnly,
+                                        featured = Model.FeaturedOnly,
+                                        onSale = Model.OnSaleOnly
+                                    })"
+                                       style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
+                                </span>
+                            }
+                        }
+                        @foreach (var color in Model.SelectedColors)
+                        {
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-paint-brush"></i> <strong>@color</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors.Where(c => c != color).ToList(),
+                                    materials = Model.SelectedMaterials,
+                                    inStock = Model.InStockOnly,
+                                    featured = Model.FeaturedOnly,
+                                    onSale = Model.OnSaleOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
+                            </span>
+                        }
+                        @foreach (var material in Model.SelectedMaterials)
+                        {
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-cube"></i> <strong>@material</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors,
+                                    materials = Model.SelectedMaterials.Where(m => m != material).ToList(),
+                                    inStock = Model.InStockOnly,
+                                    featured = Model.FeaturedOnly,
+                                    onSale = Model.OnSaleOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
+                            </span>
+                        }
+                        @if (Model.InStockOnly == true)
+                        {
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-check-circle" style="color: #27ae60;"></i> <strong>Còn hàng</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors,
+                                    materials = Model.SelectedMaterials,
+                                    featured = Model.FeaturedOnly,
+                                    onSale = Model.OnSaleOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
+                            </span>
+                        }
+                        @if (Model.FeaturedOnly == true)
+                        {
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-star" style="color: #f39c12;"></i> <strong>Nổi bật</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors,
+                                    materials = Model.SelectedMaterials,
+                                    inStock = Model.InStockOnly,
+                                    onSale = Model.OnSaleOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
+                            </span>
+                        }
+                        @if (Model.OnSaleOnly == true)
+                        {
+                            <span style="background: white; padding: 6px 12px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px;">
+                                <i class="fa fa-percent" style="color: #e74c3c;"></i> <strong>Khuyến mãi</strong>
+                                <a href="@Url.Action("Index", "Product", new {
+                                    categorySlug = Model.CurrentCategory?.DuongDanDanhMuc,
+                                    q = Model.SearchTerm,
+                                    minPrice = Model.MinPrice,
+                                    maxPrice = Model.MaxPrice,
+                                    brands = Model.SelectedBrandSlugs,
+                                    colors = Model.SelectedColors,
+                                    materials = Model.SelectedMaterials,
+                                    inStock = Model.InStockOnly,
+                                    featured = Model.FeaturedOnly
+                                })"
+                                   style="color: #e74c3c; text-decoration: none; font-weight: bold; font-size: 16px;">×</a>
                             </span>
                         }
                     </div>

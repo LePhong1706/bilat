@@ -345,7 +345,6 @@ namespace BilliardShop.Infrastructure.Migrations
                     NgayNhanHang = table.Column<DateTime>(type: "datetime2", nullable: true),
                     GhiChuKhachHang = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     GhiChuQuanTri = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
-                    NgayTao = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NgayCapNhatCuoi = table.Column<DateTime>(type: "datetime2", nullable: true),
                     NguoiTao = table.Column<int>(type: "int", nullable: true),
                     NguoiCapNhatCuoi = table.Column<int>(type: "int", nullable: true)

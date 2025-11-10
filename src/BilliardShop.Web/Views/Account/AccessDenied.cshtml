@@ -1,0 +1,162 @@
+@{
+    ViewData["Title"] = "Truy cập bị từ chối";
+}
+
+@section Styles {
+    <style>
+        body {
+            background-color: #1E1F23;
+            color: #EEEEEE;
+        }
+
+        .access-denied-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .access-denied-card {
+            background-color: #25262B;
+            border: 1px solid #2A2B30;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .access-denied-icon {
+            font-size: 80px;
+            color: #DF3B34;
+            margin-bottom: 20px;
+        }
+
+        .access-denied-title {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .access-denied-message {
+            color: #CCCCCC;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn-group-access {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary-access {
+            background-color: #DF3B34;
+            color: #FFFFFF;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            display: inline-block;
+        }
+
+        .btn-primary-access:hover {
+            background-color: #C22F28;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(223, 59, 52, 0.4);
+            color: #FFFFFF;
+        }
+
+        .btn-secondary-access {
+            background-color: transparent;
+            color: #EEEEEE;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid #2A2B30;
+            display: inline-block;
+        }
+
+        .btn-secondary-access:hover {
+            background-color: #2A2B30;
+            border-color: #DF3B34;
+            color: #FFFFFF;
+        }
+
+        .info-box {
+            background-color: rgba(223, 59, 52, 0.1);
+            border: 1px solid rgba(223, 59, 52, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .info-box-title {
+            color: #DF3B34;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .info-box-list {
+            color: #CCCCCC;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+
+        .info-box-list li {
+            margin-bottom: 8px;
+        }
+    </style>
+}
+
+<div class="access-denied-container">
+    <div class="access-denied-card">
+        <div class="access-denied-icon">
+            <i class="bi bi-shield-exclamation"></i>
+        </div>
+
+        <h1 class="access-denied-title">Truy cập bị từ chối</h1>
+
+        <p class="access-denied-message">
+            Xin lỗi, bạn không có quyền truy cập vào trang này.<br>
+            Vui lòng liên hệ quản trị viên nếu bạn cho rằng đây là một lỗi.
+        </p>
+
+        <div class="btn-group-access">
+            <a asp-controller="Home" asp-action="Index" class="btn-primary-access">
+                <i class="bi bi-house-door me-2"></i>Về trang chủ
+            </a>
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <a href="javascript:history.back()" class="btn-secondary-access">
+                    <i class="bi bi-arrow-left me-2"></i>Quay lại
+                </a>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login" class="btn-secondary-access">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>Đăng nhập
+                </a>
+            }
+        </div>
+
+        <div class="info-box">
+            <div class="info-box-title">
+                <i class="bi bi-info-circle me-2"></i>Nguyên nhân có thể:
+            </div>
+            <ul class="info-box-list">
+                <li>Tài khoản của bạn không có quyền truy cập trang này</li>
+                <li>Phiên đăng nhập của bạn đã hết hạn</li>
+                <li>Bạn cần đăng nhập với tài khoản có quyền phù hợp</li>
+                <li>Trang yêu cầu vai trò quản trị viên</li>
+            </ul>
+        </div>
+    </div>
+</div>

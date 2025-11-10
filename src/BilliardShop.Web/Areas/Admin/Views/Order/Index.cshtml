@@ -1,0 +1,122 @@
+@model IEnumerable<DonHang>
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+}
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Quản lý đơn hàng</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Đơn hàng</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header">
+                <div class="card-title">Danh sách đơn hàng</div>
+            </div>
+            <div class="card-body">
+                <!-- Search and Filter -->
+                <div class="row mb-3">
+                    <div class="col-xl-4">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Tìm kiếm đơn hàng...">
+                    </div>
+                    <div class="col-xl-3">
+                        <select class="form-select" id="filterStatus">
+                            <option value="">Tất cả trạng thái</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-3">
+                        <select class="form-select" id="filterPayment">
+                            <option value="">Tất cả thanh toán</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap" id="orderTable">
+                        <thead>
+                            <tr>
+                                <th>Mã đơn</th>
+                                <th>Khách hàng</th>
+                                <th>Ngày đặt</th>
+                                <th>Tổng tiền</th>
+                                <th>Thanh toán</th>
+                                <th>Trạng thái</th>
+                                <th style="width: 120px;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model)
+                            {
+                                <tr data-status="@order.MaTrangThai" data-payment="@order.MaPhuongThucThanhToan">
+                                    <td><a asp-action="Details" asp-route-id="@order.Id" class="fw-semibold">@order.SoDonHang</a></td>
+                                    <td>@(order.TenKhachHang ?? order.NguoiDung?.TenDangNhap ?? "Khách vãng lai")</td>
+                                    <td>@order.NgayDatHang.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td class="fw-semibold text-primary">@order.TongThanhToan.ToString("N0")đ</td>
+                                    <td>
+                                        <span class="badge bg-info-transparent">@order.PhuongThucThanhToan?.TenPhuongThuc</span>
+                                    </td>
+                                    <td>
+                                        @{
+                                            var statusBadge = "primary";
+                                            if (order.MaTrangThai == 6) statusBadge = "danger";
+                                            else if (order.MaTrangThai == 5) statusBadge = "success";
+                                            else if (order.MaTrangThai == 4) statusBadge = "warning";
+                                        }
+                                        <span class="badge bg-@statusBadge">@order.TrangThai?.TenTrangThai</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-info" title="Chi tiết">
+                                                <i class="ri-eye-line"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', filterTable);
+        document.getElementById('filterStatus').addEventListener('change', filterTable);
+        document.getElementById('filterPayment').addEventListener('change', filterTable);
+
+        function filterTable() {
+            var searchValue = document.getElementById('searchInput').value.toLowerCase();
+            var statusValue = document.getElementById('filterStatus').value;
+            var paymentValue = document.getElementById('filterPayment').value;
+
+            var table = document.getElementById('orderTable');
+            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var text = row.textContent.toLowerCase();
+                var status = row.getAttribute('data-status');
+                var payment = row.getAttribute('data-payment');
+
+                var matchSearch = text.includes(searchValue);
+                var matchStatus = !statusValue || status == statusValue;
+                var matchPayment = !paymentValue || payment == paymentValue;
+
+                if (matchSearch && matchStatus && matchPayment) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+        }
+    </script>
+}

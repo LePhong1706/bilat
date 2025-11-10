@@ -1,0 +1,109 @@
+@model IEnumerable<VaiTroNguoiDung>
+@{
+    ViewData["Title"] = "Quản lý vai trò";
+}
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Quản lý vai trò</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Vai trò</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header justify-content-between">
+                <div class="card-title">Danh sách vai trò</div>
+                <a asp-action="Create" class="btn btn-primary btn-wave">
+                    <i class="ri-add-line me-1"></i> Thêm vai trò
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên vai trò</th>
+                                <th scope="col">Mô tả</th>
+                                <th scope="col">Số người dùng</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col" style="width: 200px;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var role in Model)
+                            {
+                                <tr>
+                                    <td><span class="fw-semibold">@role.TenVaiTro</span></td>
+                                    <td>@role.MoTa</td>
+                                    <td>
+                                        <span class="badge bg-info">@(role.NguoiDungs?.Count ?? 0) người</span>
+                                    </td>
+                                    <td>
+                                        @if (role.TrangThaiHoatDong)
+                                        {
+                                            <span class="badge bg-success">Hoạt động</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary">Ngừng hoạt động</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            <a asp-action="Permissions" asp-route-id="@role.Id" class="btn btn-sm btn-success" title="Phân quyền">
+                                                <i class="ri-shield-check-line"></i>
+                                            </a>
+                                            <a asp-action="Edit" asp-route-id="@role.Id" class="btn btn-sm btn-info" title="Sửa">
+                                                <i class="ri-edit-line"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-sm btn-danger" onclick="deleteRole(@role.Id, '@role.TenVaiTro')" title="Xóa">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title">Xác nhận xóa</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa vai trò <strong id="roleName"></strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <form id="deleteForm" method="post" style="display: inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function deleteRole(id, name) {
+            document.getElementById('roleName').textContent = name;
+            document.getElementById('deleteForm').action = '@Url.Action("Delete", "Role", new { area = "Admin" })/' + id;
+            var modal = new bootstrap.Modal(document.getElementById('deleteModal'));
+            modal.show();
+        }
+    </script>
+}

@@ -16,4 +16,5 @@ public class VaiTroNguoiDung : AuditableEntity, IActivatable
 
     // Navigation properties
     public virtual ICollection<NguoiDung> NguoiDungs { get; set; } = new List<NguoiDung>();
+    public virtual ICollection<QuyenVaiTro> QuyenVaiTros { get; set; } = new List<QuyenVaiTro>();
 }

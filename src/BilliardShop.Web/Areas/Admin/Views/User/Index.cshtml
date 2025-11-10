@@ -1,0 +1,223 @@
+@model IEnumerable<NguoiDung>
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Quản lý người dùng</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Người dùng</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header justify-content-between">
+                <div class="card-title">Danh sách người dùng</div>
+                <a asp-action="Create" class="btn btn-primary btn-wave">
+                    <i class="ri-add-line me-1"></i> Thêm người dùng
+                </a>
+            </div>
+            <div class="card-body">
+                <!-- Search and Filter -->
+                <div class="row mb-3">
+                    <div class="col-xl-4 col-lg-6">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Tìm kiếm người dùng...">
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <select class="form-select" id="filterRole">
+                            <option value="">Tất cả vai trò</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <select class="form-select" id="filterStatus">
+                            <option value="">Tất cả trạng thái</option>
+                            <option value="active">Hoạt động</option>
+                            <option value="inactive">Ngừng hoạt động</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap" id="userTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên đăng nhập</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Họ tên</th>
+                                <th scope="col">Vai trò</th>
+                                <th scope="col">Ngày tạo</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col" style="width: 180px;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model)
+                            {
+                                <tr data-role="@user.MaVaiTro" data-status="@(user.TrangThaiHoatDong ? "active" : "inactive")">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm bg-primary-transparent me-2">
+                                                <i class="ri-user-line"></i>
+                                            </div>
+                                            <span class="fw-semibold">@user.TenDangNhap</span>
+                                        </div>
+                                    </td>
+                                    <td>@user.Email</td>
+                                    <td>@($"{user.Ho} {user.Ten}".Trim())</td>
+                                    <td>
+                                        <span class="badge bg-primary-transparent">@user.VaiTro?.TenVaiTro</span>
+                                    </td>
+                                    <td>@user.NgayTao.ToString("dd/MM/yyyy")</td>
+                                    <td>
+                                        @if (user.TrangThaiHoatDong)
+                                        {
+                                            <span class="badge bg-success">Hoạt động</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary">Ngừng hoạt động</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-info" title="Sửa">
+                                                <i class="ri-edit-line"></i>
+                                            </a>
+                                            <a asp-action="ResetPassword" asp-route-id="@user.Id" class="btn btn-sm btn-warning" title="Reset mật khẩu">
+                                                <i class="ri-lock-password-line"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-sm btn-danger" onclick="deleteUser(@user.Id, '@user.TenDangNhap')" title="Xóa">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @if (!Model.Any())
+                    {
+                        <div class="text-center py-5">
+                            <i class="ri-user-line fs-48 text-muted"></i>
+                            <p class="text-muted mt-3">Chưa có người dùng nào</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title">Xác nhận xóa</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa người dùng <strong id="userName"></strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let userIdToDelete = null;
+
+        // Delete user
+        function deleteUser(id, name) {
+            userIdToDelete = id;
+            document.getElementById('userName').textContent = name;
+            var modal = new bootstrap.Modal(document.getElementById('deleteModal'));
+            modal.show();
+        }
+
+        // Confirm delete
+        document.addEventListener('DOMContentLoaded', function() {
+            const confirmBtn = document.getElementById('confirmDeleteBtn');
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', async function() {
+                    if (!userIdToDelete) return;
+
+                    const url = '@Url.Action("Delete", "User", new { area = "Admin" })/' + userIdToDelete;
+                    await deleteItem(url, () => window.location.reload());
+
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('deleteModal'));
+                    if (modal) modal.hide();
+                });
+            }
+        });
+
+        // Search and filter
+        document.getElementById('searchInput').addEventListener('keyup', filterTable);
+        document.getElementById('filterRole').addEventListener('change', filterTable);
+        document.getElementById('filterStatus').addEventListener('change', filterTable);
+
+        function filterTable() {
+            var searchValue = document.getElementById('searchInput').value.toLowerCase();
+            var roleValue = document.getElementById('filterRole').value;
+            var statusValue = document.getElementById('filterStatus').value;
+
+            var table = document.getElementById('userTable');
+            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var text = row.textContent.toLowerCase();
+                var role = row.getAttribute('data-role');
+                var status = row.getAttribute('data-status');
+
+                var matchSearch = text.includes(searchValue);
+                var matchRole = !roleValue || role == roleValue;
+                var matchStatus = !statusValue || status == statusValue;
+
+                if (matchSearch && matchRole && matchStatus) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+        }
+
+        // Populate role filter
+        document.addEventListener('DOMContentLoaded', function() {
+            var table = document.getElementById('userTable');
+            if (!table) return;
+
+            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+            var roles = new Set();
+
+            for (var i = 0; i < rows.length; i++) {
+                var roleId = rows[i].getAttribute('data-role');
+                var roleName = rows[i].cells[3].textContent.trim();
+
+                if (roleId && roleName) {
+                    roles.add(JSON.stringify({ id: roleId, name: roleName }));
+                }
+            }
+
+            var roleSelect = document.getElementById('filterRole');
+            roles.forEach(function(role) {
+                var obj = JSON.parse(role);
+                var option = document.createElement('option');
+                option.value = obj.id;
+                option.textContent = obj.name;
+                roleSelect.appendChild(option);
+            });
+        });
+    </script>
+}

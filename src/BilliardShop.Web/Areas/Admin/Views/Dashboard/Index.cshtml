@@ -1,0 +1,201 @@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Dashboard</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="javascript:void(0);">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Statistics Cards -->
+<div class="row row-cols-xxl-4 row-cols-xl-2 row-cols-1">
+    <div class="col">
+        <div class="card custom-card dashboard-main-card primary">
+            <div class="card-body">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <div class="flex-fill">
+                        <span class="fs-13 fw-medium">Tổng sản phẩm</span>
+                        <h4 class="fw-semibold my-2 lh-1">@Model.TotalProducts</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block text-muted fs-11">Sản phẩm đang hoạt động</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="avatar avatar-md bg-primary-transparent svg-primary">
+                            <i class="ri-product-hunt-line fs-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card custom-card dashboard-main-card success">
+            <div class="card-body">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <div class="flex-fill">
+                        <span class="fs-13 fw-medium">Tổng đơn hàng</span>
+                        <h4 class="fw-semibold my-2 lh-1">@Model.TotalOrders</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block text-muted fs-11">Tất cả đơn hàng</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="avatar avatar-md bg-success-transparent svg-success">
+                            <i class="ri-shopping-cart-line fs-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card custom-card dashboard-main-card warning">
+            <div class="card-body">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <div class="flex-fill">
+                        <span class="fs-13 fw-medium">Khách hàng</span>
+                        <h4 class="fw-semibold my-2 lh-1">@Model.TotalCustomers</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block text-muted fs-11">Tài khoản khách hàng</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="avatar avatar-md bg-warning-transparent svg-warning">
+                            <i class="ri-user-line fs-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card custom-card dashboard-main-card secondary">
+            <div class="card-body">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <div class="flex-fill">
+                        <span class="fs-13 fw-medium">Doanh thu</span>
+                        <h4 class="fw-semibold my-2 lh-1">@Model.TotalRevenue.ToString("N0")đ</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block text-muted fs-11">Tổng doanh thu</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="avatar avatar-md bg-secondary-transparent svg-secondary">
+                            <i class="ri-money-dollar-circle-line fs-24"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Recent Orders -->
+    <div class="col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header justify-content-between">
+                <div class="card-title">Đơn hàng gần đây</div>
+                <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="btn btn-sm btn-primary">
+                    Xem tất cả
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap">
+                        <thead>
+                            <tr>
+                                <th scope="col">Mã đơn</th>
+                                <th scope="col">Khách hàng</th>
+                                <th scope="col">Ngày đặt</th>
+                                <th scope="col">Tổng tiền</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model.RecentOrders)
+                            {
+                                <tr>
+                                    <td>
+                                        <a asp-area="Admin" asp-controller="Order" asp-action="Details" asp-route-id="@order.Id">
+                                            @order.SoDonHang
+                                        </a>
+                                    </td>
+                                    <td>@(order.TenKhachHang ?? order.NguoiDung?.TenDangNhap ?? "Khách vãng lai")</td>
+                                    <td>@order.NgayDatHang.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td class="fw-semibold">@order.TongThanhToan.ToString("N0")đ</td>
+                                    <td>
+                                        <span class="badge bg-primary">@order.TrangThai?.TenTrangThai</span>
+                                    </td>
+                                    <td>
+                                        <a asp-area="Admin" asp-controller="Order" asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-info">
+                                            <i class="ri-eye-line"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @if (!Model.RecentOrders.Any())
+                    {
+                        <div class="text-center py-4">
+                            <p class="text-muted">Chưa có đơn hàng nào</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.LowStockProducts.Any())
+{
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card custom-card">
+                <div class="card-header">
+                    <div class="card-title">Sản phẩm sắp hết hàng</div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Mã SP</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Tồn kho</th>
+                                    <th>Tối thiểu</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var product in Model.LowStockProducts.Take(10))
+                                {
+                                    <tr>
+                                        <td>@product.MaCodeSanPham</td>
+                                        <td>@product.TenSanPham</td>
+                                        <td><span class="badge bg-danger">@product.SoLuongTonKho</span></td>
+                                        <td>@product.SoLuongToiThieu</td>
+                                        <td>
+                                            <a asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" class="btn btn-sm btn-warning">
+                                                Nhập thêm
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

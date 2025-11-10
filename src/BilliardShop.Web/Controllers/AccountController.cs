@@ -60,7 +60,9 @@ namespace BilliardShop.Web.Controllers
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.GivenName, $"{user.Ho} {user.Ten}".Trim()),
                 new Claim(ClaimTypes.Role, user.MaVaiTro.ToString()),
-                new Claim("TenVaiTro", user.TenVaiTro ?? "KhachHang")
+                new Claim("RoleId", user.MaVaiTro.ToString()),
+                new Claim("FullName", $"{user.Ho} {user.Ten}".Trim()),
+                new Claim("RoleName", user.TenVaiTro ?? "KhachHang")
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -80,12 +82,26 @@ namespace BilliardShop.Web.Controllers
 
             _logger.LogInformation("User {Username} logged in at {Time}", user.TenDangNhap, DateTime.UtcNow);
 
+            // Redirect theo vai trò
             if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
 
-            return RedirectToAction("Index", "Home");
+            // Kiểm tra vai trò để redirect
+            var tenVaiTro = user.TenVaiTro?.ToLower().Trim();
+
+            // Chỉ KhachHang vào trang user, các vai trò khác vào Admin
+            if (tenVaiTro == "khachhang")
+            {
+                // Redirect về trang chủ cho khách hàng
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // Tất cả vai trò khác (Admin, QuanLy, NhanVien, ...) vào Admin Dashboard
+                return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
+            }
         }
 
         [HttpGet]

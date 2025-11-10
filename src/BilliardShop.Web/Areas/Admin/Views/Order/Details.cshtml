@@ -1,0 +1,157 @@
+@model DonHang
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+}
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Chi tiết đơn hàng #@Model.SoDonHang</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+            <li class="breadcrumb-item"><a asp-action="Index">Đơn hàng</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chi tiết</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-8">
+        <div class="card custom-card">
+            <div class="card-header">
+                <div class="card-title">Thông tin đơn hàng</div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="fw-semibold" style="width: 200px;">Mã đơn hàng:</td>
+                            <td>@Model.SoDonHang</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Ngày đặt hàng:</td>
+                            <td>@Model.NgayDatHang.ToString("dd/MM/yyyy HH:mm")</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Khách hàng:</td>
+                            <td>@(Model.TenKhachHang ?? (Model.NguoiDung != null ? $"{Model.NguoiDung.Ho} {Model.NguoiDung.Ten}".Trim() : "Khách vãng lai"))</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Email:</td>
+                            <td>@(Model.EmailKhachHang ?? Model.NguoiDung?.Email)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Số điện thoại:</td>
+                            <td>@(Model.SoDienThoaiKhachHang ?? Model.NguoiDung?.SoDienThoai)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Địa chỉ giao hàng:</td>
+                            <td>@Model.DiaChiGiaoHang</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card custom-card">
+            <div class="card-header">
+                <div class="card-title">Chi tiết sản phẩm</div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.ChiTietDonHangs)
+                            {
+                                <tr>
+                                    <td>@item.TenSanPham</td>
+                                    <td>@item.DonGia.ToString("N0")đ</td>
+                                    <td>@item.SoLuong</td>
+                                    <td class="fw-semibold">@item.ThanhTien.ToString("N0")đ</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end fw-semibold">Tổng cộng:</td>
+                                <td class="fw-semibold text-primary">@Model.TongThanhToan.ToString("N0")đ</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card custom-card">
+            <div class="card-header">
+                <div class="card-title">Trạng thái đơn hàng</div>
+            </div>
+            <div class="card-body">
+                <form asp-action="UpdateStatus" method="post">
+                    <input type="hidden" name="orderId" value="@Model.Id" />
+
+                    <div class="mb-3">
+                        <label class="form-label">Trạng thái hiện tại</label>
+                        <div>
+                            <span class="badge bg-primary">@Model.TrangThai?.TenTrangThai</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Cập nhật trạng thái</label>
+                        <select name="statusId" class="form-select">
+                            @if (ViewBag.Statuses != null)
+                            {
+                                foreach (var status in (SelectList)ViewBag.Statuses)
+                                {
+                                    <option value="@status.Value">@status.Text</option>
+                                }
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Ghi chú</label>
+                        <textarea name="note" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="ri-refresh-line me-1"></i> Cập nhật trạng thái
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card custom-card">
+            <div class="card-header">
+                <div class="card-title">Thanh toán</div>
+            </div>
+            <div class="card-body">
+                <p><strong>Phương thức:</strong><br>@Model.PhuongThucThanhToan?.TenPhuongThuc</p>
+                <p><strong>Trạng thái thanh toán:</strong><br>
+                    @if (Model.TrangThaiThanhToan == "paid")
+                    {
+                        <span class="badge bg-success">Đã thanh toán</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning">Chưa thanh toán</span>
+                    }
+                </p>
+            </div>
+        </div>
+
+        <a asp-action="Index" class="btn btn-light w-100">
+            <i class="ri-arrow-left-line me-1"></i> Quay lại danh sách
+        </a>
+    </div>
+</div>

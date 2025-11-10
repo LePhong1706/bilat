@@ -1,6 +1,10 @@
 using BilliardShop.Application;
 using BilliardShop.Infrastructure;
+using BilliardShop.Infrastructure.Data;
+using BilliardShop.Infrastructure.Data.SeedData;
+using BilliardShop.Web.Middleware;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +31,21 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.SlidingExpiration = true;
         options.Cookie.HttpOnly = true;
         options.Cookie.IsEssential = true;
+        options.Events = new CookieAuthenticationEvents
+        {
+            OnRedirectToLogin = context =>
+            {
+                // Luôn redirect về /Account/Login bất kể đang ở area nào
+                var returnUrl = context.Request.Path + context.Request.QueryString;
+                context.Response.Redirect($"/Account/Login?returnUrl={Uri.EscapeDataString(returnUrl)}");
+                return Task.CompletedTask;
+            },
+            OnRedirectToAccessDenied = context =>
+            {
+                context.Response.Redirect("/Account/AccessDenied");
+                return Task.CompletedTask;
+            }
+        };
     });
 
 // Add Application services (AutoMapper)
@@ -36,6 +55,31 @@ builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
+
+// Seed permissions and admin user on startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>();
+
+    try
+    {
+        var context = services.GetRequiredService<BilliardShopDbContext>();
+
+        // Seed quyền mặc định
+        await PermissionSeeder.SeedPermissionsAsync(context);
+
+        // Seed phân quyền cho các vai trò
+        await RolePermissionSeeder.SeedRolePermissionsAsync(context);
+
+        // Seed tài khoản admin mặc định
+        await AdminUserSeeder.SeedAdminUserAsync(context);
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "An error occurred while seeding data.");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -52,8 +96,18 @@ app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Add Permission Middleware for Admin area
+app.UseMiddleware<PermissionMiddleware>();
+
 app.MapStaticAssets();
 
+// Admin Area Route - phải register trước để match specific pattern trước
+app.MapAreaControllerRoute(
+    name: "admin",
+    areaName: "Admin",
+    pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
+
+// Default Route - register sau để làm fallback
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")

@@ -1,0 +1,288 @@
+@model IEnumerable<SanPham>
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Quản lý sản phẩm</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header justify-content-between">
+                <div class="card-title">Danh sách sản phẩm</div>
+                <a asp-action="Create" class="btn btn-primary btn-wave">
+                    <i class="ri-add-line me-1"></i> Thêm sản phẩm
+                </a>
+            </div>
+            <div class="card-body">
+                <!-- Search and Filter -->
+                <div class="row mb-3">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <select class="form-select" id="filterCategory">
+                            <option value="">Tất cả danh mục</option>
+                            <!-- Will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <select class="form-select" id="filterBrand">
+                            <option value="">Tất cả thương hiệu</option>
+                            <!-- Will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                        <select class="form-select" id="filterStatus">
+                            <option value="">Tất cả trạng thái</option>
+                            <option value="active">Hoạt động</option>
+                            <option value="inactive">Ngừng hoạt động</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap" id="productTable">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 80px;">Hình ảnh</th>
+                                <th scope="col">Mã SP</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Danh mục</th>
+                                <th scope="col">Thương hiệu</th>
+                                <th scope="col">Giá bán</th>
+                                <th scope="col">Tồn kho</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col" style="width: 150px;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model)
+                            {
+                                var firstImage = product.HinhAnhs?.FirstOrDefault();
+                                <tr data-category="@product.MaDanhMuc" data-brand="@product.MaThuongHieu" data-status="@(product.TrangThaiHoatDong ? "active" : "inactive")">
+                                    <td>
+                                        @if (firstImage != null)
+                                        {
+                                            <img src="@firstImage.DuongDanHinhAnh" alt="@product.TenSanPham" class="avatar avatar-md">
+                                        }
+                                        else
+                                        {
+                                            <div class="avatar avatar-md bg-light">
+                                                <i class="ri-image-line fs-18"></i>
+                                            </div>
+                                        }
+                                    </td>
+                                    <td>@product.MaCodeSanPham</td>
+                                    <td>
+                                        <div class="fw-semibold">@product.TenSanPham</div>
+                                        @if (!string.IsNullOrEmpty(product.MoTaNgan))
+                                        {
+                                            <small class="text-muted">@(product.MoTaNgan.Length > 50 ? product.MoTaNgan.Substring(0, 50) + "..." : product.MoTaNgan)</small>
+                                        }
+                                    </td>
+                                    <td>@product.DanhMuc?.TenDanhMuc</td>
+                                    <td>@product.ThuongHieu?.TenThuongHieu</td>
+                                    <td class="fw-semibold text-primary">
+                                        @if (product.GiaKhuyenMai.HasValue && product.GiaKhuyenMai.Value > 0)
+                                        {
+                                            <div>
+                                                <span class="text-decoration-line-through text-muted">@product.GiaGoc.ToString("N0")đ</span><br>
+                                                <span class="text-danger">@product.GiaKhuyenMai.Value.ToString("N0")đ</span>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <span>@product.GiaGoc.ToString("N0")đ</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (product.SoLuongTonKho <= product.SoLuongToiThieu)
+                                        {
+                                            <span class="badge bg-danger">@product.SoLuongTonKho</span>
+                                        }
+                                        else if (product.SoLuongTonKho <= product.SoLuongToiThieu * 2)
+                                        {
+                                            <span class="badge bg-warning">@product.SoLuongTonKho</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-success">@product.SoLuongTonKho</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (product.TrangThaiHoatDong)
+                                        {
+                                            <span class="badge bg-success">Hoạt động</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary">Ngừng hoạt động</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-sm btn-info" title="Sửa">
+                                                <i class="ri-edit-line"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-sm btn-danger" onclick="deleteProduct(@product.Id, '@product.TenSanPham')" title="Xóa">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @if (!Model.Any())
+                    {
+                        <div class="text-center py-5">
+                            <i class="ri-inbox-line fs-48 text-muted"></i>
+                            <p class="text-muted mt-3">Chưa có sản phẩm nào</p>
+                            <a asp-action="Create" class="btn btn-primary">
+                                <i class="ri-add-line me-1"></i> Thêm sản phẩm đầu tiên
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title">Xác nhận xóa</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa sản phẩm <strong id="productName"></strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let productIdToDelete = null;
+
+        // Delete product
+        function deleteProduct(id, name) {
+            productIdToDelete = id;
+            document.getElementById('productName').textContent = name;
+            var modal = new bootstrap.Modal(document.getElementById('deleteModal'));
+            modal.show();
+        }
+
+        // Confirm delete
+        document.addEventListener('DOMContentLoaded', function() {
+            const confirmBtn = document.getElementById('confirmDeleteBtn');
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', async function() {
+                    if (!productIdToDelete) return;
+
+                    const url = '@Url.Action("Delete", "Product", new { area = "Admin" })/' + productIdToDelete;
+                    const result = await deleteItem(url, () => window.location.reload());
+
+                    // Đóng modal
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('deleteModal'));
+                    if (modal) modal.hide();
+                });
+            }
+        });
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', filterTable);
+        document.getElementById('filterCategory').addEventListener('change', filterTable);
+        document.getElementById('filterBrand').addEventListener('change', filterTable);
+        document.getElementById('filterStatus').addEventListener('change', filterTable);
+
+        function filterTable() {
+            var searchValue = document.getElementById('searchInput').value.toLowerCase();
+            var categoryValue = document.getElementById('filterCategory').value;
+            var brandValue = document.getElementById('filterBrand').value;
+            var statusValue = document.getElementById('filterStatus').value;
+
+            var table = document.getElementById('productTable');
+            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var text = row.textContent.toLowerCase();
+                var category = row.getAttribute('data-category');
+                var brand = row.getAttribute('data-brand');
+                var status = row.getAttribute('data-status');
+
+                var matchSearch = text.includes(searchValue);
+                var matchCategory = !categoryValue || category == categoryValue;
+                var matchBrand = !brandValue || brand == brandValue;
+                var matchStatus = !statusValue || status == statusValue;
+
+                if (matchSearch && matchCategory && matchBrand && matchStatus) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+        }
+
+        // Populate filters on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var table = document.getElementById('productTable');
+            if (!table) return;
+
+            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+            var categories = new Set();
+            var brands = new Set();
+
+            for (var i = 0; i < rows.length; i++) {
+                var categoryId = rows[i].getAttribute('data-category');
+                var brandId = rows[i].getAttribute('data-brand');
+                var categoryName = rows[i].cells[3].textContent.trim();
+                var brandName = rows[i].cells[4].textContent.trim();
+
+                if (categoryId && categoryName) {
+                    categories.add(JSON.stringify({ id: categoryId, name: categoryName }));
+                }
+                if (brandId && brandName) {
+                    brands.add(JSON.stringify({ id: brandId, name: brandName }));
+                }
+            }
+
+            var categorySelect = document.getElementById('filterCategory');
+            categories.forEach(function(cat) {
+                var obj = JSON.parse(cat);
+                var option = document.createElement('option');
+                option.value = obj.id;
+                option.textContent = obj.name;
+                categorySelect.appendChild(option);
+            });
+
+            var brandSelect = document.getElementById('filterBrand');
+            brands.forEach(function(brand) {
+                var obj = JSON.parse(brand);
+                var option = document.createElement('option');
+                option.value = obj.id;
+                option.textContent = obj.name;
+                brandSelect.appendChild(option);
+            });
+        });
+    </script>
+}

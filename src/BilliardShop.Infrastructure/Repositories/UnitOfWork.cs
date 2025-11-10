@@ -17,6 +17,10 @@ public class UnitOfWork : IUnitOfWork
     private INguoiDungRepository? _nguoiDungRepository;
     private IDiaChiNguoiDungRepository? _diaChiNguoiDungRepository;
 
+    // Permission Management Repositories
+    private IQuyenRepository? _quyenRepository;
+    private IQuyenVaiTroRepository? _quyenVaiTroRepository;
+
     // Product Management Repositories
     private IDanhMucSanPhamRepository? _danhMucSanPhamRepository;
     private IThuongHieuRepository? _thuongHieuRepository;
@@ -65,6 +69,13 @@ public class UnitOfWork : IUnitOfWork
 
     public IDiaChiNguoiDungRepository DiaChiNguoiDungRepository
         => _diaChiNguoiDungRepository ??= new DiaChiNguoiDungRepository(_context);
+
+    // Permission Management Repository Properties
+    public IQuyenRepository QuyenRepository
+        => _quyenRepository ??= new QuyenRepository(_context);
+
+    public IQuyenVaiTroRepository QuyenVaiTroRepository
+        => _quyenVaiTroRepository ??= new QuyenVaiTroRepository(_context);
 
     // Product Management Repository Properties
     public IDanhMucSanPhamRepository DanhMucSanPhamRepository

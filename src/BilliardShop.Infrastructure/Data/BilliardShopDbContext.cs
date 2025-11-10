@@ -16,6 +16,10 @@ public class BilliardShopDbContext : DbContext
     public DbSet<NguoiDung> NguoiDungs { get; set; }
     public DbSet<DiaChiNguoiDung> DiaChiNguoiDungs { get; set; }
 
+    // Permission Management
+    public DbSet<Quyen> Quyens { get; set; }
+    public DbSet<QuyenVaiTro> QuyenVaiTros { get; set; }
+
     // Product Management
     public DbSet<DanhMucSanPham> DanhMucSanPhams { get; set; }
     public DbSet<ThuongHieu> ThuongHieus { get; set; }
@@ -77,6 +81,8 @@ public class BilliardShopDbContext : DbContext
         modelBuilder.Entity<VaiTroNguoiDung>().ToTable("VaiTroNguoiDung");
         modelBuilder.Entity<NguoiDung>().ToTable("NguoiDung");
         modelBuilder.Entity<DiaChiNguoiDung>().ToTable("DiaChiNguoiDung");
+        modelBuilder.Entity<Quyen>().ToTable("Quyen");
+        modelBuilder.Entity<QuyenVaiTro>().ToTable("QuyenVaiTro");
         modelBuilder.Entity<DanhMucSanPham>().ToTable("DanhMucSanPham");
         modelBuilder.Entity<ThuongHieu>().ToTable("ThuongHieu");
         modelBuilder.Entity<SanPham>().ToTable("SanPham");

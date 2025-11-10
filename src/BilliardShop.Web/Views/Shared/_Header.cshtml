@@ -52,10 +52,10 @@
           <div class="offcanvas-body d-flex flex-row justify-content-start justify-content-lg-end">
             <ul class="navbar-nav my-lg-4 gap-lg-2 gap-xl-4">
               <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Index", "Home")">Trang chủ</a>
+                <a class="nav-link" href="/">Trang chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Index", "Product")">Sản phẩm</a>
+                <a class="nav-link" href="/Product">Sản phẩm</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Về chúng tôi</a>
@@ -66,12 +66,12 @@
               @if (User.Identity?.IsAuthenticated == true)
               {
                 <li class="nav-item">
-                  <a class="nav-link" href="@Url.Action("Index", "Order")">Đơn hàng của tôi</a>
+                  <a class="nav-link" href="/Order">Đơn hàng của tôi</a>
                 </li>
               }
             </ul>
             <div class="mt-3 d-flex gap-2 align-items-center">
-              <a href="@Url.Action("Index", "Cart")" class="btn btn-lg btn-cta-primary d-none d-lg-block">Giỏ hàng</a>
+              <a href="/Cart" class="btn btn-lg btn-cta-primary d-none d-lg-block">Giỏ hàng</a>
               @if (User.Identity?.IsAuthenticated == true)
               {
                 <div class="dropdown d-none d-lg-block">
@@ -80,13 +80,13 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown" style="background-color: #25262B; border: 1px solid #2A2B30;">
                     <li>
-                      <a class="dropdown-item" href="@Url.Action("Index", "Order")" style="color: #EEEEEE;">
+                      <a class="dropdown-item" href="/Order" style="color: #EEEEEE;">
                         <i class="bi bi-box-seam me-2"></i>Đơn hàng của tôi
                       </a>
                     </li>
                     <li><hr class="dropdown-divider" style="border-color: #2A2B30;"></li>
                     <li>
-                      <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                      <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
                         <button type="submit" class="dropdown-item" style="color: #DF3B34;">
                           <i class="bi bi-box-arrow-right me-2"></i>Đăng xuất
                         </button>
@@ -97,7 +97,7 @@
               }
               else
               {
-                <a href="@Url.Action("Login", "Account")" class="btn btn-lg btn-outline-primary d-none d-lg-block">Đăng nhập</a>
+                <a href="/Account/Login" class="btn btn-lg btn-outline-primary d-none d-lg-block">Đăng nhập</a>
               }
             </div>
           </div>

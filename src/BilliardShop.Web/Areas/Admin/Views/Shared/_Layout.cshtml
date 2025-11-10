@@ -1,0 +1,213 @@
+@using BilliardShop.Domain.Interfaces
+@inject IUnitOfWork UnitOfWork
+
+<!DOCTYPE html>
+<html lang="vi" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>@ViewData["Title"] - Admin BilliardShop</title>
+
+    <link rel="icon" href="~/assets/images/brand-logos/favicon.ico" type="image/x-icon">
+
+    <script src="~/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+    <link id="style" href="~/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/styles.css" rel="stylesheet">
+    <link href="~/assets/css/icons.css" rel="stylesheet">
+    <link href="~/assets/libs/node-waves/waves.min.css" rel="stylesheet">
+    <link href="~/assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/libs/@@simonwep/pickr/themes/nano.min.css">
+    <link rel="stylesheet" href="~/assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="~/assets/libs/flatpickr/flatpickr.min.css">
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body>
+    <div class="progress-top-bar"></div>
+    <div id="loader">
+        <img src="~/assets/images/media/loader.svg" alt="">
+    </div>
+
+    <div class="page">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="main-header-container container-fluid">
+                <div class="header-content-left">
+                    <div class="header-element">
+                        <div class="horizontal-logo">
+                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="header-logo">
+                                <h4 class="desktop-logo">BilliardShop Admin</h4>
+                                <h4 class="toggle-logo">BS</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-element">
+                        <a aria-label="Hide Sidebar" class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle" data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a>
+                    </div>
+                </div>
+
+                <div class="header-content-right">
+                    <div class="header-element header-theme-mode">
+                        <a href="javascript:void(0);" class="header-link layout-setting">
+                            <span class="light-layout"><i class="ri-moon-line"></i></span>
+                            <span class="dark-layout"><i class="ri-sun-line"></i></span>
+                        </a>
+                    </div>
+
+                    <div class="header-element">
+                        <div class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <div class="me-sm-2 me-0">
+                                    <span class="avatar avatar-sm avatar-rounded">
+                                        <i class="ri-user-line fs-18"></i>
+                                    </span>
+                                </div>
+                                <div class="d-sm-block d-none">
+                                    <p class="fw-semibold mb-0 lh-1">@User.FindFirst("FullName")?.Value</p>
+                                    <span class="op-7 fw-normal d-block fs-11">@User.FindFirst("RoleName")?.Value</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end" aria-labelledby="mainHeaderProfile">
+                            <li>
+                                <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+                                    <button type="submit" class="dropdown-item d-flex">
+                                        <i class="ri-logout-box-line fs-18 me-2 op-7"></i>Đăng xuất
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="app-sidebar sticky" id="sidebar">
+            <div class="main-sidebar-header">
+                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="header-logo">
+                    <h4 class="desktop-dark">BilliardShop</h4>
+                </a>
+            </div>
+
+            <div class="main-sidebar" id="sidebar-scroll">
+                <nav class="main-menu-container nav nav-pills flex-column sub-open">
+                    <div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg></div>
+                    <ul class="main-menu">
+                        <li class="slide__category"><span class="category-name">Tổng quan</span></li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="side-menu__item">
+                                <i class="ri-dashboard-line side-menu__icon"></i>
+                                <span class="side-menu__label">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="slide__category"><span class="category-name">Quản lý sản phẩm</span></li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="side-menu__item">
+                                <i class="ri-product-hunt-line side-menu__icon"></i>
+                                <span class="side-menu__label">Sản phẩm</span>
+                            </a>
+                        </li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="Category" asp-action="Index" class="side-menu__item">
+                                <i class="ri-list-check side-menu__icon"></i>
+                                <span class="side-menu__label">Danh mục</span>
+                            </a>
+                        </li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="Brand" asp-action="Index" class="side-menu__item">
+                                <i class="ri-shield-star-line side-menu__icon"></i>
+                                <span class="side-menu__label">Thương hiệu</span>
+                            </a>
+                        </li>
+
+                        <li class="slide__category"><span class="category-name">Bán hàng</span></li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="side-menu__item">
+                                <i class="ri-shopping-cart-line side-menu__icon"></i>
+                                <span class="side-menu__label">Đơn hàng</span>
+                            </a>
+                        </li>
+
+                        <li class="slide__category"><span class="category-name">Hệ thống</span></li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="User" asp-action="Index" class="side-menu__item">
+                                <i class="ri-user-line side-menu__icon"></i>
+                                <span class="side-menu__label">Người dùng</span>
+                            </a>
+                        </li>
+                        <li class="slide">
+                            <a asp-area="Admin" asp-controller="Role" asp-action="Index" class="side-menu__item">
+                                <i class="ri-shield-user-line side-menu__icon"></i>
+                                <span class="side-menu__label">Vai trò & Phân quyền</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                        <i class="ri-check-line me-1"></i> @TempData["SuccessMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+                        <i class="ri-error-warning-line me-1"></i> @TempData["ErrorMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
+                @if (TempData["WarningMessage"] != null)
+                {
+                    <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+                        <i class="ri-alert-line me-1"></i> @TempData["WarningMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
+
+                @RenderBody()
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3 bg-white text-center">
+            <div class="container">
+                <span class="text-muted">Copyright © <span id="year"></span> BilliardShop. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+
+    <div class="scrollToTop">
+        <span class="arrow"><i class="ti ti-arrow-big-up fs-18"></i></span>
+    </div>
+    <div id="responsive-overlay"></div>
+
+    <script src="~/assets/libs/@@popperjs/core/umd/popper.min.js"></script>
+    <script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/defaultmenu.min.js"></script>
+    <script src="~/assets/libs/node-waves/waves.min.js"></script>
+    <script src="~/assets/js/sticky.js"></script>
+    <script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="~/assets/js/simplebar.js"></script>
+    <script src="~/assets/libs/@@tarekraafat/autocomplete.js/autoComplete.min.js"></script>
+    <script src="~/assets/libs/@@simonwep/pickr/pickr.es5.min.js"></script>
+    <script src="~/assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="~/assets/js/custom-switcher.min.js"></script>
+    <script src="~/assets/js/custom.js"></script>
+    <script src="~/js/admin-common.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

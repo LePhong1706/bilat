@@ -56,12 +56,6 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<DateTime?>("NgayXuatBan")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
-
                     b.Property<bool>("NoiBat")
                         .HasColumnType("bit");
 
@@ -127,17 +121,8 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int>("MaSanPham")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<int?>("NguoiThucHien")
                         .HasColumnType("int");
@@ -189,22 +174,13 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int?>("MaNguoiDung")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime?>("NgayDuyet")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
                     b.Property<int?>("NguoiDuyet")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
                         .HasColumnType("int");
 
                     b.Property<string>("NoiDungBinhLuan")
@@ -266,13 +242,7 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<DateTime?>("NgayCapNhatCuoi")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("NgayTao")
-                        .HasColumnType("datetime2");
-
                     b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -361,22 +331,13 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int>("MaSanPham")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime?>("NgayDuyet")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
                     b.Property<int?>("NguoiDuyet")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
                         .HasColumnType("int");
 
                     b.Property<string>("NoiDungDanhGia")
@@ -427,17 +388,8 @@ namespace BilliardShop.Infrastructure.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<string>("TenDanhMuc")
                         .IsRequired()
@@ -475,17 +427,8 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int>("MaSanPham")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -531,17 +474,8 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int>("MaNguoiDung")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<string>("PhuongXa")
                         .HasMaxLength(100)
@@ -616,9 +550,6 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int>("MaTrangThai")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayDatHang")
                         .HasColumnType("datetime2");
 
@@ -630,12 +561,6 @@ namespace BilliardShop.Infrastructure.Migrations
 
                     b.Property<DateTime?>("NgayYeuCauGiao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<decimal>("PhiVanChuyen")
                         .HasColumnType("decimal(18,2)");
@@ -686,8 +611,12 @@ namespace BilliardShop.Infrastructure.Migrations
 
                     b.ToTable("DonHang", null, t =>
                         {
+                            t.HasTrigger("tr_DonHang_NhatKyHeThong");
+
                             t.HasCheckConstraint("CK_DonHang_TrangThaiThanhToan", "[TrangThaiThanhToan] IN ('ChoThanhToan', 'DaThanhToan', 'ThatBai', 'HoanTien')");
                         });
+
+                    b.HasAnnotation("SqlServer:UseSqlOutputClause", false);
                 });
 
             modelBuilder.Entity("BilliardShop.Domain.Entities.GioHang", b =>
@@ -714,12 +643,6 @@ namespace BilliardShop.Infrastructure.Migrations
 
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<int>("SoLuong")
                         .HasColumnType("int");
@@ -756,17 +679,8 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int>("MaSanPham")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<string>("TextThayThe")
                         .HasMaxLength(255)
@@ -814,17 +728,11 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<DateTime>("NgayBatDau")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayKetThuc")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
 
                     b.Property<int?>("NguoiTao")
                         .HasColumnType("int");
@@ -912,12 +820,6 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
-
                     b.Property<string>("SoDienThoai")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
@@ -969,21 +871,12 @@ namespace BilliardShop.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
 
                     b.Property<string>("NguoiLienHe")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<string>("QuocGia")
                         .HasMaxLength(50)
@@ -1123,6 +1016,104 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.ToTable("PhuongThucVanChuyen", (string)null);
                 });
 
+            modelBuilder.Entity("BilliardShop.Domain.Entities.Quyen", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("HanhDong")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("MaQuyen")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("MoTa")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime>("NgayTao")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<int?>("NguoiCapNhatCuoi")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("NguoiTao")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NhomQuyen")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("TenQuyen")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("ThuTuSapXep")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
+
+                    b.Property<bool>("TrangThaiHoatDong")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MaQuyen")
+                        .IsUnique();
+
+                    b.ToTable("Quyen", (string)null);
+                });
+
+            modelBuilder.Entity("BilliardShop.Domain.Entities.QuyenVaiTro", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MaQuyen")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaVaiTro")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("NgayGan")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<int?>("NguoiGan")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MaQuyen");
+
+                    b.HasIndex("MaVaiTro", "MaQuyen")
+                        .IsUnique();
+
+                    b.ToTable("QuyenVaiTro", (string)null);
+                });
+
             modelBuilder.Entity("BilliardShop.Domain.Entities.SanPham", b =>
                 {
                     b.Property<int>("Id")
@@ -1196,9 +1187,6 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
                     b.Property<int?>("NguoiTaoMaSanPham")
                         .HasColumnType("int");
 
@@ -1248,6 +1236,8 @@ namespace BilliardShop.Infrastructure.Migrations
 
                     b.ToTable("SanPham", null, t =>
                         {
+                            t.HasTrigger("tr_SanPham_CapNhatNgayChinhSua");
+
                             t.HasCheckConstraint("CK_SanPham_GiaGoc", "[GiaGoc] >= 0");
 
                             t.HasCheckConstraint("CK_SanPham_GiaKhuyenMai", "[GiaKhuyenMai] >= 0");
@@ -1256,6 +1246,8 @@ namespace BilliardShop.Infrastructure.Migrations
 
                             t.HasCheckConstraint("CK_SanPham_SoLuongTonKho", "[SoLuongTonKho] >= 0");
                         });
+
+                    b.HasAnnotation("SqlServer:UseSqlOutputClause", false);
                 });
 
             modelBuilder.Entity("BilliardShop.Domain.Entities.SuDungMaGiamGia", b =>
@@ -1276,20 +1268,8 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Property<int?>("MaNguoiDung")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgaySuDung")
                         .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("NgayTao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<decimal>("SoTienGiamGia")
                         .HasColumnType("decimal(18,2)");
@@ -1355,17 +1335,8 @@ namespace BilliardShop.Infrastructure.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<string>("QuocGia")
                         .HasMaxLength(50)
@@ -1433,17 +1404,8 @@ namespace BilliardShop.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("NgayTao")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("NguoiCapNhatCuoi")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NguoiTao")
-                        .HasColumnType("int");
 
                     b.Property<string>("TenVaiTro")
                         .IsRequired()
@@ -1729,6 +1691,25 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Navigation("NguoiDung");
                 });
 
+            modelBuilder.Entity("BilliardShop.Domain.Entities.QuyenVaiTro", b =>
+                {
+                    b.HasOne("BilliardShop.Domain.Entities.Quyen", "Quyen")
+                        .WithMany("QuyenVaiTros")
+                        .HasForeignKey("MaQuyen")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BilliardShop.Domain.Entities.VaiTroNguoiDung", "VaiTro")
+                        .WithMany("QuyenVaiTros")
+                        .HasForeignKey("MaVaiTro")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Quyen");
+
+                    b.Navigation("VaiTro");
+                });
+
             modelBuilder.Entity("BilliardShop.Domain.Entities.SanPham", b =>
                 {
                     b.HasOne("BilliardShop.Domain.Entities.DanhMucSanPham", "DanhMuc")
@@ -1854,6 +1835,11 @@ namespace BilliardShop.Infrastructure.Migrations
                     b.Navigation("DonHangs");
                 });
 
+            modelBuilder.Entity("BilliardShop.Domain.Entities.Quyen", b =>
+                {
+                    b.Navigation("QuyenVaiTros");
+                });
+
             modelBuilder.Entity("BilliardShop.Domain.Entities.SanPham", b =>
                 {
                     b.Navigation("BienDongKhoHangs");
@@ -1884,6 +1870,8 @@ namespace BilliardShop.Infrastructure.Migrations
             modelBuilder.Entity("BilliardShop.Domain.Entities.VaiTroNguoiDung", b =>
                 {
                     b.Navigation("NguoiDungs");
+
+                    b.Navigation("QuyenVaiTros");
                 });
 #pragma warning restore 612, 618
         }

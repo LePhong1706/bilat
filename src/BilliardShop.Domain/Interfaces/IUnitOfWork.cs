@@ -10,6 +10,10 @@ public interface IUnitOfWork : IDisposable
     INguoiDungRepository NguoiDungRepository { get; }
     IDiaChiNguoiDungRepository DiaChiNguoiDungRepository { get; }
 
+    // Permission Management Repositories
+    IQuyenRepository QuyenRepository { get; }
+    IQuyenVaiTroRepository QuyenVaiTroRepository { get; }
+
     // Product Management Repositories - Updated with specific interfaces
     IDanhMucSanPhamRepository DanhMucSanPhamRepository { get; }
     IThuongHieuRepository ThuongHieuRepository { get; }

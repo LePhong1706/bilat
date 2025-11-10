@@ -1,0 +1,126 @@
+@model IEnumerable<DanhMucSanPham>
+@{
+    ViewData["Title"] = "Quản lý danh mục";
+}
+
+@Html.AntiForgeryToken()
+
+<div class="page-header-breadcrumb mb-3">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1 class="page-title fw-medium fs-18 mb-0">Quản lý danh mục</h1>
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Danh mục</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header justify-content-between">
+                <div class="card-title">Danh sách danh mục</div>
+                <a asp-action="Create" class="btn btn-primary btn-wave">
+                    <i class="ri-add-line me-1"></i> Thêm danh mục
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap">
+                        <thead>
+                            <tr>
+                                <th>Hình ảnh</th>
+                                <th>Tên danh mục</th>
+                                <th>Danh mục cha</th>
+                                <th>Thứ tự</th>
+                                <th>Trạng thái</th>
+                                <th style="width: 150px;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var category in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(category.HinhAnhDaiDien))
+                                        {
+                                            <img src="@category.HinhAnhDaiDien" alt="@category.TenDanhMuc" class="avatar avatar-sm">
+                                        }
+                                        else
+                                        {
+                                            <div class="avatar avatar-sm bg-light"><i class="ri-folder-line"></i></div>
+                                        }
+                                    </td>
+                                    <td><span class="fw-semibold">@category.TenDanhMuc</span></td>
+                                    <td>@(category.DanhMucCha?.TenDanhMuc ?? "-")</td>
+                                    <td>@category.ThuTuSapXep</td>
+                                    <td>
+                                        @if (category.TrangThaiHoatDong)
+                                        {
+                                            <span class="badge bg-success">Hoạt động</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary">Ngừng hoạt động</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a asp-action="Edit" asp-route-id="@category.Id" class="btn btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                            <button type="button" class="btn btn-sm btn-danger" onclick="deleteCategory(@category.Id, '@category.TenDanhMuc')"><i class="ri-delete-bin-line"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title">Xác nhận xóa</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa danh mục <strong id="categoryName"></strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let categoryIdToDelete = null;
+
+        function deleteCategory(id, name) {
+            categoryIdToDelete = id;
+            document.getElementById('categoryName').textContent = name;
+            new bootstrap.Modal(document.getElementById('deleteModal')).show();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const confirmBtn = document.getElementById('confirmDeleteBtn');
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', async function() {
+                    if (!categoryIdToDelete) return;
+
+                    const url = '@Url.Action("Delete", "Category", new { area = "Admin" })/' + categoryIdToDelete;
+                    await deleteItem(url, () => window.location.reload());
+
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('deleteModal'));
+                    if (modal) modal.hide();
+                });
+            }
+        });
+    </script>
+}

@@ -1,5 +1,7 @@
 @using BilliardShop.Domain.Interfaces
+@using BilliardShop.Web.Helpers
 @inject IUnitOfWork UnitOfWork
+@inject PermissionHelper PermissionHelper
 
 <!DOCTYPE html>
 <html lang="vi" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
@@ -97,55 +99,100 @@
                 <nav class="main-menu-container nav nav-pills flex-column sub-open">
                     <div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg></div>
                     <ul class="main-menu">
-                        <li class="slide__category"><span class="category-name">Tổng quan</span></li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="side-menu__item">
-                                <i class="ri-dashboard-line side-menu__icon"></i>
-                                <span class="side-menu__label">Dashboard</span>
-                            </a>
-                        </li>
+                        @{
+                            var hasDashboardAccess = await PermissionHelper.HasPermissionAsync("Dashboard.Xem");
+                            var hasProductAccess = await PermissionHelper.HasPermissionAsync("SanPham.Xem");
+                            var hasCategoryAccess = await PermissionHelper.HasPermissionAsync("DanhMuc.Xem");
+                            var hasBrandAccess = await PermissionHelper.HasPermissionAsync("ThuongHieu.Xem");
+                            var hasOrderAccess = await PermissionHelper.HasPermissionAsync("DonHang.Xem");
+                            var hasUserAccess = await PermissionHelper.HasPermissionAsync("NguoiDung.Xem");
+                            var hasRoleAccess = await PermissionHelper.HasPermissionAsync("VaiTro.Xem");
 
-                        <li class="slide__category"><span class="category-name">Quản lý sản phẩm</span></li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="side-menu__item">
-                                <i class="ri-product-hunt-line side-menu__icon"></i>
-                                <span class="side-menu__label">Sản phẩm</span>
-                            </a>
-                        </li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="Category" asp-action="Index" class="side-menu__item">
-                                <i class="ri-list-check side-menu__icon"></i>
-                                <span class="side-menu__label">Danh mục</span>
-                            </a>
-                        </li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="Brand" asp-action="Index" class="side-menu__item">
-                                <i class="ri-shield-star-line side-menu__icon"></i>
-                                <span class="side-menu__label">Thương hiệu</span>
-                            </a>
-                        </li>
+                            var hasAnyProductModule = hasProductAccess || hasCategoryAccess || hasBrandAccess;
+                            var hasAnySystemModule = hasUserAccess || hasRoleAccess;
+                        }
 
-                        <li class="slide__category"><span class="category-name">Bán hàng</span></li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="side-menu__item">
-                                <i class="ri-shopping-cart-line side-menu__icon"></i>
-                                <span class="side-menu__label">Đơn hàng</span>
-                            </a>
-                        </li>
+                        @if (hasDashboardAccess)
+                        {
+                            <li class="slide__category"><span class="category-name">Tổng quan</span></li>
+                            <li class="slide">
+                                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="side-menu__item">
+                                    <i class="ri-dashboard-line side-menu__icon"></i>
+                                    <span class="side-menu__label">Dashboard</span>
+                                </a>
+                            </li>
+                        }
 
-                        <li class="slide__category"><span class="category-name">Hệ thống</span></li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="User" asp-action="Index" class="side-menu__item">
-                                <i class="ri-user-line side-menu__icon"></i>
-                                <span class="side-menu__label">Người dùng</span>
-                            </a>
-                        </li>
-                        <li class="slide">
-                            <a asp-area="Admin" asp-controller="Role" asp-action="Index" class="side-menu__item">
-                                <i class="ri-shield-user-line side-menu__icon"></i>
-                                <span class="side-menu__label">Vai trò & Phân quyền</span>
-                            </a>
-                        </li>
+                        @if (hasAnyProductModule)
+                        {
+                            <li class="slide__category"><span class="category-name">Quản lý sản phẩm</span></li>
+
+                            @if (hasProductAccess)
+                            {
+                                <li class="slide">
+                                    <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="side-menu__item">
+                                        <i class="ri-product-hunt-line side-menu__icon"></i>
+                                        <span class="side-menu__label">Sản phẩm</span>
+                                    </a>
+                                </li>
+                            }
+
+                            @if (hasCategoryAccess)
+                            {
+                                <li class="slide">
+                                    <a asp-area="Admin" asp-controller="Category" asp-action="Index" class="side-menu__item">
+                                        <i class="ri-list-check side-menu__icon"></i>
+                                        <span class="side-menu__label">Danh mục</span>
+                                    </a>
+                                </li>
+                            }
+
+                            @if (hasBrandAccess)
+                            {
+                                <li class="slide">
+                                    <a asp-area="Admin" asp-controller="Brand" asp-action="Index" class="side-menu__item">
+                                        <i class="ri-shield-star-line side-menu__icon"></i>
+                                        <span class="side-menu__label">Thương hiệu</span>
+                                    </a>
+                                </li>
+                            }
+                        }
+
+                        @if (hasOrderAccess)
+                        {
+                            <li class="slide__category"><span class="category-name">Bán hàng</span></li>
+                            <li class="slide">
+                                <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="side-menu__item">
+                                    <i class="ri-shopping-cart-line side-menu__icon"></i>
+                                    <span class="side-menu__label">Đơn hàng</span>
+                                </a>
+                            </li>
+                        }
+
+                        @if (hasAnySystemModule)
+                        {
+                            <li class="slide__category"><span class="category-name">Hệ thống</span></li>
+
+                            @if (hasUserAccess)
+                            {
+                                <li class="slide">
+                                    <a asp-area="Admin" asp-controller="User" asp-action="Index" class="side-menu__item">
+                                        <i class="ri-user-line side-menu__icon"></i>
+                                        <span class="side-menu__label">Người dùng</span>
+                                    </a>
+                                </li>
+                            }
+
+                            @if (hasRoleAccess)
+                            {
+                                <li class="slide">
+                                    <a asp-area="Admin" asp-controller="Role" asp-action="Index" class="side-menu__item">
+                                        <i class="ri-shield-user-line side-menu__icon"></i>
+                                        <span class="side-menu__label">Vai trò & Phân quyền</span>
+                                    </a>
+                                </li>
+                            }
+                        }
                     </ul>
                     <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></div>
                 </nav>

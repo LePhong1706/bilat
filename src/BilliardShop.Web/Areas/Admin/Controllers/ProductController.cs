@@ -271,12 +271,30 @@ public class ProductController : BaseAdminController
                 return Json(new { success = false, message = "Không tìm thấy sản phẩm" });
             }
 
-            // Soft delete
-            product.TrangThaiHoatDong = false;
-            _unitOfWork.SanPhamRepository.Update(product);
+            var productName = product.TenSanPham;
+
+            // Xóa hình ảnh liên quan trước
+            var productImages = await _unitOfWork.HinhAnhSanPhamRepository.FindAsync(h => h.MaSanPham == id);
+            foreach (var image in productImages)
+            {
+                _unitOfWork.HinhAnhSanPhamRepository.Remove(image);
+
+                // Xóa file vật lý nếu có
+                if (!string.IsNullOrEmpty(image.DuongDanHinhAnh))
+                {
+                    var imagePath = Path.Combine(_environment.WebRootPath, image.DuongDanHinhAnh.TrimStart('/'));
+                    if (System.IO.File.Exists(imagePath))
+                    {
+                        System.IO.File.Delete(imagePath);
+                    }
+                }
+            }
+
+            // Hard delete - xóa vĩnh viễn
+            _unitOfWork.SanPhamRepository.Remove(product);
             await _unitOfWork.SaveChangesAsync();
 
-            return Json(new { success = true, message = $"Đã xóa sản phẩm '{product.TenSanPham}' thành công" });
+            return Json(new { success = true, message = $"Đã xóa sản phẩm '{productName}' vĩnh viễn thành công" });
         }
         catch (Exception ex)
         {

@@ -3,6 +3,7 @@ using BilliardShop.Infrastructure;
 using BilliardShop.Infrastructure.Data;
 using BilliardShop.Infrastructure.Data.SeedData;
 using BilliardShop.Web.Middleware;
+using BilliardShop.Web.Helpers;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +11,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add HttpContextAccessor for PermissionHelper
+builder.Services.AddHttpContextAccessor();
+
+// Add PermissionHelper as scoped service
+builder.Services.AddScoped<PermissionHelper>();
 
 // Add Session support
 builder.Services.AddDistributedMemoryCache();

@@ -260,12 +260,13 @@ public class UserController : BaseAdminController
                 return Json(new { success = false, message = "Không thể xóa tài khoản của chính bạn" });
             }
 
-            // Soft delete
-            user.TrangThaiHoatDong = false;
-            _unitOfWork.NguoiDungRepository.Update(user);
+            var username = user.TenDangNhap;
+
+            // Hard delete - xóa vĩnh viễn
+            _unitOfWork.NguoiDungRepository.Remove(user);
             await _unitOfWork.SaveChangesAsync();
 
-            return Json(new { success = true, message = $"Đã xóa người dùng '{user.TenDangNhap}' thành công" });
+            return Json(new { success = true, message = $"Đã xóa người dùng '{username}' vĩnh viễn thành công" });
         }
         catch (Exception ex)
         {
